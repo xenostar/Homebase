@@ -1,0 +1,177 @@
+@charset "UTF-8"; /* Sets the encoding of the style sheet to Unicode UTF-8. Don't move it.        */
+/* -------------------------------------------------------------------------------------------------
+////////////////////////////////////////////////////////////////////////////////////////////////////
+HOMEBASE.RESET.CSS
+////////////////////////////////////////////////////////////////////////////////////////////////////
+------------------------------------------------------------------------------------------------- */
+html,body,div,span,applet,object,iframe,
+h1,h2,h3,h4,h5,h6,p,blockquote,pre,hr,
+a,abbr,address,cite,code,
+del,dfn,em,img,ins,kbd,q,s,samp,
+small,strong,sub,sup,tt,var,
+button,input,select,textarea,
+b,u,i,
+dl,dt,dd,ol,ul,li,
+fieldset,form,label,legend,
+table,caption,tbody,tfoot,thead,tr,th,td,
+article,aside,canvas,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,
+summary,time,mark,audio,video                 { border:0; margin:0; outline:0; padding:0; }
+                                                /* Removes all rogue inconsistencies */
+
+html                                          { overflow-y:scroll; }
+                                                /* Forces scrolling */
+
+body                                          { text-align:center; }
+                                                /* Centers the main container in IE5. Text is reset back to default left in .wrapper */
+
+
+
+/* HTML 5 Fixes
+-----------------------------------------------
+/////////////////////////////////////////////// */
+article,aside,details,figcaption,figure,footer,
+header,hgroup,nav,menu,section,summary        { display:block; }
+                                                /* Corrects block display not defined in IE6/7/8/9 & FF3 */
+
+audio,canvas,video                            { display:inline-block; *display:inline; *zoom:1; }
+                                                /* Corrects inline-block display not defined in IE6/7/8/9 & FF3 */
+
+audio:not([controls])                         { display:none; }
+                                                /* Prevents modern browsers from displaying 'audio' without control */
+
+[hidden]                                      { display:none; }
+                                                /* Addresses styling for 'hidden' attribute not present in IE7/8/9, FF3, S4. Known issue: No IE6 support */
+
+
+
+/* FONTS
+-----------------------------------------------
+/////////////////////////////////////////////// */
+body                                          { font-size:100%; text-shadow:0 0 1px rgba(0,0,0,0.01); -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; -moz-text-size-adjust:100%; -o-text-size-adjust:100%; }
+                                                /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units */
+
+::-moz-selection                              { background: #fe57a1; color: #fff; text-shadow: none; }
+::selection                                   { background: #fe57a1; color: #fff; text-shadow: none; }
+                                                /* Removes text-shadow from highlights. Sets background color */
+
+html,option,optgroup,
+button,input,select,textarea                  { font-family:sans-serif; }
+                                                /* Addresses font-family inconsistency between 'textarea' and other form elements. */
+
+h1,h2,h3,h4,h5,h6                             { font-size:100%; font-weight:normal; text-decoration:none; }
+                                                /* Baseline set for heading tags, removes formatting */
+
+small                                         { font-size:75%; }
+strong,b,mark                                 { font-style:inherit; font-weight:bold; }
+em,i,cite,q,address,dfn,var                   { font-style:italic; font-weight:inherit; }
+
+a,u,ins                                       { text-decoration:none; }
+
+del,s                                         { text-decoration:line-through; }
+
+abbr[title],dfn[title]                        { cursor:help; border-bottom:1px dotted; }
+                                                /* Addresses styling not present in IE7/8/9, S5, Chrome */
+
+pre,code,kbd,samp                             { font-family:monospace, serif; _font-family:'courier new', monospace; font-size:1em; }
+                                                /* Corrects font family set oddly in IE6, S4/5, Chrome */
+
+pre                                           { white-space:pre; white-space:pre-wrap; word-wrap:break-word; }
+                                                /* Improves readability of pre-formatted text in all browsers */
+
+sub,sup                                       { font-size:75%; line-height:0; position:relative; vertical-align:baseline; }
+sup                                           { top:-0.5em; }
+sub                                           { bottom:-0.25em; }
+                                                /* Prevents sub and sup affecting line-height in all browsers */
+
+
+
+/* FORMS
+-----------------------------------------------
+/////////////////////////////////////////////// */
+label,textarea                                { cursor:pointer; }
+                                                /* Indicates these areas have a function on-click */
+
+textarea:active,textarea:focus                { cursor:text; }
+                                                /* Changes cursor back to text indicator when using */
+
+button,input,select,textarea                  { display:block; font-size:100%; vertical-align:baseline; *vertical-align:middle; width:100%; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
+                                                /* Makes inputs behave like true block-level elements. Corrects font-sizes not being inherited in all browsers. Improves vertical appearance and consistency */
+
+textarea                                      { overflow:auto; vertical-align:top; }
+                                                /* Removes default vertical scrollbar in IE6/7/8/9. Changes vertical-align to top for consistency and sense */
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"]                          { cursor:pointer; -webkit-appearance:button; *overflow:visible; }
+                                                /* Indicates area has function on-click. Allows iOS buttons to be style-able. Removes innert spacing in IE7. Known issue: Inner spacing still in IE6 */
+
+button[disabled],
+input[disabled]                               { cursor:default; }
+                                                /* Resets the cursor to default for disabled elements */
+
+input[type="checkbox"],
+input[type="radio"]                           { box-sizing:border-box; *height:13px; *width:13px; }
+                                                /* Addresses box-sizing to content-box in IE8/9. Removes excess padding in IE7 */
+
+input[type="search"]                          { box-sizing:content-box; -moz-box-sizing:content-box; -webkit-box-sizing:content-box; -webkit-appearance:textfield; }
+                                                /* Address appearance set to searchfield in S5/Chrome. Addresses box-sizing set to border-box in S5/Chrome */
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button { -webkit-appearance:none; }
+                                                /* Removes inner padding and search cancel button in S5, Chrome on OS X */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner                       { border:0; padding:0; }
+                                                /* Removes inner padding and border in FF3+ */
+
+legend                                        { white-space:normal; *margin-left:-7px; }
+                                                /* Corrects text not wrapping in FF3. Corrects alignment displayed oddly in IE6/7 */
+
+
+
+/* LINKS
+-----------------------------------------------
+/////////////////////////////////////////////// */
+a,
+a:focus,
+a:active,
+a:visited,
+a:hover                                       { outline:none; text-decoration:none; }
+                                                /* Removes all formatting from all links */
+
+
+
+/* IMAGES
+-----------------------------------------------
+/////////////////////////////////////////////// */
+img                                           { border:none; height:auto; font-style:italic; -ms-interpolation-mode:bicubic; }
+                                                /* Removes borders from linked images. Increases quality when scaled in IE7 */
+
+svg:not(:root)                                { overflow:hidden; }
+                                                /* Corrects overflow displayed oddly in IE9 */
+
+
+
+/* TABLES
+-----------------------------------------------
+/////////////////////////////////////////////// */
+table                                         { border-collapse:collapse; border-spacing:0; width:100%; }
+                                                /* Removes spacing between table cells. Sets to 100% width default */
+
+td                                            { vertical-align: top; }
+                                                /* Cleans up table alignment */
+
+
+
+/* CLEARFIX
+-----------------------------------------------
+/////////////////////////////////////////////// */
+.cf:before,
+.cf:after                                     { content:""; display:table; }
+
+.cf:after                                     { clear:both; }
+
+.cf                                           { zoom:1; }
+                                              /* For IE 6/7 (trigger hasLayout) */

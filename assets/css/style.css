@@ -1,0 +1,137 @@
+@charset "UTF-8"; /* Sets the encoding of the style sheet to Unicode UTF-8. Don't move it.        */
+/* -------------------------------------------------------------------------------------------------
+////////////////////////////////////////////////////////////////////////////////////////////////////
+01 - STYLE.CSS : TYPOGRAPHY
+////////////////////////////////////////////////////////////////////////////////////////////////////
+------------------------------------------------------------------------------------------------- */
+/* Main Content
+-----------------------------------------------
+/////////////////////////////////////////////// */
+body                                          { color:#444; font-family:'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif; line-height:1.125em; }
+
+.section_long,
+.section                                      { font-size:0.875em; }
+                                                /* Leave the font-size in a non-body selector. */
+
+img                                           { max-width:100%; vertical-align:bottom; }
+                                                /* Responsive images. Also, fixed spacing at bottom of image sometimes. */
+div,span,
+ul li                                         { vertical-align:top; }
+                                                /* Fixes alignment issues */
+
+p                                             { margin-bottom:1em; }
+                                                /* Makes all paragraphs have 1em scaling margin on bottom. */
+[class^="col_0"] p:last-child                 { margin-bottom:0; }
+                                                /* Makes last paragraph in containers have 0px margin on bottom. */
+
+h1                                            { display:block; font-size:3.0em; font-family:'Asap', sans-serif; font-style:normal; font-weight:700; line-height:1.125em; font-style:normal; }
+h2                                            { display:block; font-size:2.5em; font-family:'Asap', sans-serif; font-style:normal; font-weight:400; line-height:1.125em; font-style:italic; }
+h3                                            { display:block; font-size:2.0em; font-family:'Asap', sans-serif; font-style:normal; font-weight:400; line-height:1.125em; font-style:italic; }
+h4                                            { display:block; font-size:1.5em; font-family:'Asap', sans-serif; font-style:normal; font-weight:400; line-height:1.125em; font-style:italic; }
+h5                                            { display:block; font-size:1.0em; font-family:'Asap', sans-serif; font-style:normal; font-weight:400; line-height:1.125em; font-style:italic; }
+h6                                            { display:block; font-size:0.5em; font-family:'Asap', sans-serif; font-style:normal; font-weight:400; line-height:1.125em; font-style:italic; }
+
+span.amp                                      { font-family:Baskerville,"Palatino Linotype",Times New Roman,serif; font-style:italic; }
+                                                /* Styles ampersands to appear badass. */
+                                                /* http://simplebits.com/notebook/2008/08/14/ampersands-2/  for reference*/
+
+/* Header
+-----------------------------------------------
+/////////////////////////////////////////////// */
+.title                                        { color:#fff; font-style:italic; width:100%; }
+
+/* Nav
+-----------------------------------------------
+/////////////////////////////////////////////// */
+
+/* Content
+-----------------------------------------------
+/////////////////////////////////////////////// */
+
+/* Footer
+-----------------------------------------------
+/////////////////////////////////////////////// */
+
+
+
+
+
+
+/* -------------------------------------------------------------------------------------------------
+////////////////////////////////////////////////////////////////////////////////////////////////////
+02 - STYLE.CSS : LAYOUT
+////////////////////////////////////////////////////////////////////////////////////////////////////
+------------------------------------------------------------------------------------------------- */
+body                                          { background:#ccc; }
+.wrapper                                      { background:transparent; }
+.pad                                          { padding:.5em; }
+.mar                                          { margin:.5em; }
+
+/* Header
+-----------------------------------------------
+/////////////////////////////////////////////// */
+#header h1                                    { text-align:center; }
+
+/* Nav
+-----------------------------------------------
+/////////////////////////////////////////////// */
+#navi > div > div > div                       { text-align:center; background:#fff; border-radius:5px; }
+#navi > div > div:hover > div                 { background:#eee; }
+
+#navi2 > div > div > div                      { text-align:center; background:#fff; border-radius:5px; }
+#navi2 > div > div:hover > div                { background:#eee; }
+
+/* Content
+-----------------------------------------------
+/////////////////////////////////////////////// */
+#content > div > div                          { text-align:center; background:#fff; border-radius:5px; }
+#content > div:hover > div                    { background:#eee; }
+
+/* Footer
+-----------------------------------------------
+/////////////////////////////////////////////// */
+#footer > div > div                           { text-align:center; background:#fff; border-radius:5px; }
+#footer > div:hover > div                     { background:#eee; }
+
+
+
+
+
+/* -------------------------------------------------------------------------------------------------
+////////////////////////////////////////////////////////////////////////////////////////////////////
+03 - STYLE.CSS : MEDIAQUERIES
+////////////////////////////////////////////////////////////////////////////////////////////////////
+------------------------------------------------------------------------------------------------- */
+/* Smartphones
+-----------------------------------------------
+/////////////////////////////////////////////// */
+@media (max-width:480px)                      {
+
+#navi .col_03                                 { display:block; margin:0; width:100%; }
+#navi .col_01                                 { margin:2% 0 0 2%; width:32%; }
+#navi .col_01:first-child                     { margin-left:0; }
+
+#content .col_01                              { display:block; margin-left:0; width:100%; }
+#content .col_02                              { display:block; margin-left:0; width:100%; }
+#content .col_03                              { display:block; margin-left:0; width:100%; }
+#content .col_04                              { display:block; margin-left:0; width:100%; }
+
+}
+
+/* Portrait Tablets
+-----------------------------------------------
+/////////////////////////////////////////////// */
+@media (min-width:480px) and (max-width:768px){
+}
+
+/* Landscape Tablets
+-----------------------------------------------
+/////////////////////////////////////////////// */
+@media (min-width:768px) and (max-width:979px){
+}
+
+/* Default
+-----------------------------------------------
+/////////////////////////////////////////////// */
+@media (min-width:980px)                      {
+}
