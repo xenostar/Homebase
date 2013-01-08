@@ -25,11 +25,11 @@ HOMEBASE.GRID.CSS : GRID SETUP
 /* Grids
 -----------------------------------------------
 /////////////////////////////////////////////// */
-.col_06                                       { display:block; margin:2% 0 0 2%; vertical-align:top; width:100%; }
-.col_04                                       { display:inline-block; margin:2% 0 0 2%; vertical-align:top; width:66%; zoom:1; *display:inline; }
-.col_03                                       { display:inline-block; margin:2% 0 0 2%; vertical-align:top; width:49%; zoom:1; *display:inline; }
-.col_02                                       { display:inline-block; margin:2% 0 0 2%; vertical-align:top; width:32%; zoom:1; *display:inline; }
-.col_01                                       { display:inline-block; margin:2% 0 0 2%; vertical-align:top; width:15%; zoom:1; *display:inline; }
+.col_06                                       { float:left; margin:2% 0 0 2%; vertical-align:top; width:100%; }
+.col_04                                       { float:left; margin:2% 0 0 2%; vertical-align:top; width:66%; }
+.col_03                                       { float:left; margin:2% 0 0 2%; vertical-align:top; width:49%; }
+.col_02                                       { float:left; margin:2% 0 0 2%; vertical-align:top; width:32%; }
+.col_01                                       { float:left; margin:2% 0 0 2%; vertical-align:top; width:15%; }
 
 /* Nested Grid Widths
 -----------------------------------------------
