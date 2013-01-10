@@ -1,0 +1,2 @@
+# Ignoring these directories
+_notes/				# Ignores the _notes/ directory and any files in it
