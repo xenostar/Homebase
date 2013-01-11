@@ -52,11 +52,16 @@ HOMEBASE.GRID.CSS : GRID SETUP
 -----------------------------------------------
 /////////////////////////////////////////////// */
 .gut-top [class^="col_0"]                    { margin-top:2%; }
+.gut-top-20 [class^="col_0"]                 { margin-top:20px; }
+.gut-top-40 [class^="col_0"]                 { margin-top:40px; }
 
 /* Bottom Gutters
 -----------------------------------------------
 /////////////////////////////////////////////// */
-.gut-bot [class^="col_0"]                    { margin-bottom:20px; }
+.gut-bot [class^="col_0"]                    { margin-bottom:2%; }
+.gut-bot-20 [class^="col_0"]                 { margin-bottom:20px; }
+.gut-bot-40 [class^="col_0"]                 { margin-bottom:40px; }
+
 
 
 
