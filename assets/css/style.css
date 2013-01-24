@@ -16,10 +16,10 @@ body                                          { color:#444; font-family:'Helveti
 img                                           { max-width:100%; vertical-align:bottom; }
                                                 /* Responsive images. Also, fixed spacing at bottom of image sometimes. */
 div,span,
-ul li                                         { vertical-align:top; }
+ul,ul li                                      { vertical-align:top; }
                                                 /* Fixes alignment issues */
 
-p                                             { margin-bottom:1em; }
+p                                             { margin-bottom:1em; vertical-align:top; }
                                                 /* Makes all paragraphs have 1em scaling margin on bottom. */
 [class^="col_0"] p:last-child                 { margin-bottom:0; }
                                                 /* Makes last paragraph in containers have 0px margin on bottom. */

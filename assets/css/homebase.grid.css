@@ -62,6 +62,15 @@ HOMEBASE.GRID.CSS : GRID SETUP
 .gut-bot-20 [class^="col_0"]                 { margin-bottom:20px; }
 .gut-bot-40 [class^="col_0"]                 { margin-bottom:40px; }
 
+/*
+Next grids for reference~
+.col_06 > .col_03                            { margin:0 0 0 2%; width:49%; }
+.col_04 > .col_02                            { margin:0 0 0 3.030303030303030303030303030303%; width:48.484848484848484848484848484848%; }
+.col_04 > .col_01                            { margin:0 0 0 3.030303030303030303030303030303%; width:22.727272727272727272727272727273%; }
+.col_03 > .col_01                            { margin:0 0 0 4.081632653061224489795918367347%; width:30.612244897959183673469387755102%; }
+.col_02 > .col_01                            { margin:0 0 0 6.25%; width:46.875%; }
+*/
+
 
 
 
