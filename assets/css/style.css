@@ -64,8 +64,7 @@ span.amp                                      { font-family:Baskerville,"Palatin
 ------------------------------------------------------------------------------------------------- */
 body                                          { background:#ccc; }
 .wrapper                                      { background:none; }
-.pad                                          { padding:.5em; }
-.mar                                          { margin:.5em; }
+.pad                                          { padding:.5em; background:#fff; border-radius:5px; }
 
 /* Header
 -----------------------------------------------
@@ -75,20 +74,14 @@ body                                          { background:#ccc; }
 /* Nav
 -----------------------------------------------
 /////////////////////////////////////////////// */
-#navi > div > div > div                       { text-align:center; background:#fff; border-radius:5px; }
-#navi > div > div:hover > div                 { background:#eee; }
 
 /* Content
 -----------------------------------------------
 /////////////////////////////////////////////// */
-#cont > div > div                             { text-align:center; background:#fff; border-radius:5px; }
-#cont > div:hover > div                       { background:#eee; }
 
 /* Footer
 -----------------------------------------------
 /////////////////////////////////////////////// */
-#foot > div > div                             { text-align:center; background:#fff; border-radius:5px; }
-#foot > div:hover > div                       { background:#eee; }
 
 
 
@@ -107,10 +100,14 @@ body                                          { background:#ccc; }
 #navi [class^="col_0"]                        { margin-left:0; width:100%; }
 #cont [class^="col_0"]                        { margin-left:0; width:100%; }
 
+}
 /* Portrait Tablets
 -----------------------------------------------
 /////////////////////////////////////////////// */
 @media (min-width:480px) and (max-width:768px){
+
+#navi [class^="col_0"]                        { margin-left:0; width:100%; }
+
 }
 
 /* Landscape Tablets
