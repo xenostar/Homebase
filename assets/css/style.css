@@ -62,9 +62,9 @@ span.amp                                      { font-family:Baskerville,"Palatin
 02 - STYLE.CSS : LAYOUT
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 ------------------------------------------------------------------------------------------------- */
-body                                          { background:#ccc; }
-.wrapper                                      { background:none; }
-.pad                                          { padding:.5em; background:#fff; border-radius:5px; }
+body                                          { background:#000; }
+.wrapper                                      { background:#ccc; }
+.pad                                          { background:#fff; border-radius:5px; padding:.5em; }
 
 /* Header
 -----------------------------------------------
