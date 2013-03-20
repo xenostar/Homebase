@@ -62,9 +62,12 @@ span.amp                                      { font-family:Baskerville,"Palatin
 02 - STYLE.CSS : LAYOUT
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 ------------------------------------------------------------------------------------------------- */
-body                                          { background:#000; }
+body                                          { background:#ccc; }
 .wrapper                                      { background:#ccc; }
 .pad                                          { background:#fff; border-radius:5px; padding:.5em; }
+
+#top-bar                                      { background:rgba(0,0,0,0.4); position:fixed; left:0; right:0; top:0; z-index:10; }
+#top-bar .col_06                              { color:#fff; margin-top:0; padding:5px 0; text-align:center; }
 
 /* Header
 -----------------------------------------------
@@ -100,6 +103,11 @@ body                                          { background:#000; }
 #navi [class^="col_0"]                        { margin-left:0; width:100%; }
 #cont [class^="col_0"]                        { margin-left:0; width:100%; }
 
+.smart                                        { display:auto; }
+.port                                         { display:none; }
+.land                                         { display:none; }
+.full                                         { display:none; }
+
 }
 /* Portrait Tablets
 -----------------------------------------------
@@ -108,16 +116,33 @@ body                                          { background:#000; }
 
 #navi [class^="col_0"]                        { margin-left:0; width:100%; }
 
+.smart                                        { display:none; }
+.port                                         { display:auto; }
+.land                                         { display:none; }
+.full                                         { display:none; }
+
 }
 
 /* Landscape Tablets
 -----------------------------------------------
 /////////////////////////////////////////////// */
 @media (min-width:768px) and (max-width:979px){
+
+.smart                                        { display:none; }
+.port                                         { display:none; }
+.land                                         { display:auto; }
+.full                                         { display:none; }
+
 }
 
 /* Default
 -----------------------------------------------
 /////////////////////////////////////////////// */
 @media (min-width:980px)                      {
+
+.smart                                        { display:none; }
+.port                                         { display:none; }
+.land                                         { display:none; }
+.full                                         { display:auto; }
+
 }
