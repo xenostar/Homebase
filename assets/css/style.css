@@ -10,7 +10,6 @@
 body                                          { color:#444; font-family:'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif; line-height:1.125em; }
 
 .section_full,
-.section_tiny,
 .section                                      { font-size:0.875em; }
                                                 /* Leave the font-size in a non-body selector. */
 
