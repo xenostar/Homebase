@@ -9,14 +9,16 @@
 /////////////////////////////////////////////// */
 body                                          { color:#444; font-family:'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif; line-height:1.125em; }
 
-.section_long,
+.section_full,
+.section_tiny,
 .section                                      { font-size:0.875em; }
                                                 /* Leave the font-size in a non-body selector. */
 
 img                                           { max-width:100%; vertical-align:bottom; }
                                                 /* Responsive images. Also, fixed spacing at bottom of image sometimes. */
 div,span,
-ul,ul li                                      { vertical-align:top; }
+ol,ol li,
+ul,ul li                                      { list-style-type:none; vertical-align:top; }
                                                 /* Fixes alignment issues */
 
 p                                             { margin-bottom:1em; vertical-align:top; }
@@ -24,12 +26,12 @@ p                                             { margin-bottom:1em; vertical-alig
 [class^="col_0"] p:last-child                 { margin-bottom:0; }
                                                 /* Makes last paragraph in containers have 0px margin on bottom. */
 
-h1                                            { display:block; font-size:3.0em; font-family:'Asap', sans-serif; font-style:normal; font-weight:700; line-height:1.125em; font-style:normal; }
-h2                                            { display:block; font-size:2.5em; font-family:'Asap', sans-serif; font-style:normal; font-weight:400; line-height:1.125em; font-style:italic; }
-h3                                            { display:block; font-size:2.0em; font-family:'Asap', sans-serif; font-style:normal; font-weight:400; line-height:1.125em; font-style:italic; }
-h4                                            { display:block; font-size:1.5em; font-family:'Asap', sans-serif; font-style:normal; font-weight:400; line-height:1.125em; font-style:italic; }
-h5                                            { display:block; font-size:1.0em; font-family:'Asap', sans-serif; font-style:normal; font-weight:400; line-height:1.125em; font-style:italic; }
-h6                                            { display:block; font-size:0.5em; font-family:'Asap', sans-serif; font-style:normal; font-weight:400; line-height:1.125em; font-style:italic; }
+h1                                            { display:block; font-size:3.0em; font-family:sans-serif; font-style:normal; font-weight:400; line-height:1.125em; font-style:normal; }
+h2                                            { display:block; font-size:2.5em; font-family:sans-serif; font-style:normal; font-weight:400; line-height:1.125em; font-style:normal; }
+h3                                            { display:block; font-size:2.0em; font-family:sans-serif; font-style:normal; font-weight:400; line-height:1.125em; font-style:normal; }
+h4                                            { display:block; font-size:1.5em; font-family:sans-serif; font-style:normal; font-weight:400; line-height:1.125em; font-style:normal; }
+h5                                            { display:block; font-size:1.0em; font-family:sans-serif; font-style:normal; font-weight:400; line-height:1.125em; font-style:normal; }
+h6                                            { display:block; font-size:0.5em; font-family:sans-serif; font-style:normal; font-weight:400; line-height:1.125em; font-style:normal; }
 
 span.amp                                      { font-family:Baskerville,"Palatino Linotype",Times New Roman,serif; font-style:italic; }
                                                 /* Styles ampersands to appear badass. */
@@ -122,7 +124,6 @@ body                                          { background:#ccc; }
 .full                                         { display:none; }
 
 }
-
 /* Landscape Tablets
 -----------------------------------------------
 /////////////////////////////////////////////// */
@@ -134,7 +135,6 @@ body                                          { background:#ccc; }
 .full                                         { display:none; }
 
 }
-
 /* Default
 -----------------------------------------------
 /////////////////////////////////////////////// */
