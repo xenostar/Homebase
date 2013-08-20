@@ -3,15 +3,6 @@
 // SCRIPTS_TOP.JS : SCRIPTS TO BE PLACED AT THE TOP OF THE PAGE
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 ------------------------------------------------------------------------------------------------- */
-/* Images to preload
------------------------------------------------
-/////////////////////////////////////////////// */
-var heroArray = [
-	//'/uploads/hero_about.jpg',
-]
-
-
-
 /* Functions
 -----------------------------------------------
 /////////////////////////////////////////////// */
@@ -19,7 +10,7 @@ function imgLoaded(img){
 	$(img).parent().addClass('loaded');
 };
 function preCache(){
-	$.each(heroArray, function(){
+	$.each(imagePreload, function(){
 		var img = new Image();
 		img.src = this;
 	});
