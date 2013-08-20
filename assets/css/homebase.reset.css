@@ -16,7 +16,7 @@ fieldset,form,label,legend,
 table,caption,tbody,tfoot,thead,tr,th,td,
 article,aside,canvas,details,figcaption,figure,
 footer,header,hgroup,menu,nav,section,
-summary,time,mark,audio,video                 { border:0; margin:0; outline:0; padding:0; }
+summary,time,mark,audio,video                 { border:0; margin:0; outline:0; padding:0; position:relative; }
                                                 /* Removes all rogue inconsistencies */
 
 html                                          { overflow-y:scroll; }
@@ -34,7 +34,7 @@ article,aside,details,figcaption,figure,footer,
 header,hgroup,nav,menu,section,summary        { display:block; }
                                                 /* Corrects block display not defined in IE6/7/8/9 & FF3 */
 
-audio,canvas,video                            { display:inline-block; *display:inline; *zoom:1; }
+audio,canvas,video                            { display:block; *display:inline; *zoom:1; }
                                                 /* Corrects inline-block display not defined in IE6/7/8/9 & FF3 */
 
 audio:not([controls])                         { display:none; }
@@ -51,8 +51,8 @@ audio:not([controls])                         { display:none; }
 body                                          { font-size:100%; text-shadow:0 0 1px rgba(0,0,0,0.01); -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; -moz-text-size-adjust:100%; -o-text-size-adjust:100%; }
                                                 /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units */
 
-::-moz-selection                              { background: #fe57a1; color: #fff; text-shadow: none; }
-::selection                                   { background: #fe57a1; color: #fff; text-shadow: none; }
+::-moz-selection                              { background:#fe57a1; color:#fff; text-shadow:none; }
+::selection                                   { background:#fe57a1; color:#fff; text-shadow:none; }
                                                 /* Removes text-shadow from highlights. Sets background color */
 
 html,option,optgroup,
@@ -98,7 +98,7 @@ textarea:active,textarea:focus                { cursor:text; }
 button,input,select,textarea                  { display:block; font-size:100%; vertical-align:baseline; *vertical-align:middle; width:100%; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
                                                 /* Makes inputs behave like true block-level elements. Corrects font-sizes not being inherited in all browsers. Improves vertical appearance and consistency */
 
-textarea                                      { overflow:auto; vertical-align:top; }
+textarea                                      { resize:vertical; overflow:auto; vertical-align:top; }
                                                 /* Removes default vertical scrollbar in IE6/7/8/9. Changes vertical-align to top for consistency and sense */
 
 button,
@@ -149,7 +149,7 @@ a:hover                                       { outline:none; text-decoration:no
 img                                           { border:none; height:auto; font-style:italic; -ms-interpolation-mode:bicubic; }
                                                 /* Removes borders from linked images. Increases quality when scaled in IE7 */
 
-svg:not(:root)                                { overflow:hidden; }
+svg:not(:root)                                { display:block; overflow:hidden; }
                                                 /* Corrects overflow displayed oddly in IE9 */
 
 
@@ -160,7 +160,7 @@ svg:not(:root)                                { overflow:hidden; }
 table                                         { border-collapse:collapse; border-spacing:0; width:100%; }
                                                 /* Removes spacing between table cells. Sets to 100% width default */
 
-td                                            { vertical-align: top; }
+td                                            { vertical-align:top; }
                                                 /* Cleans up table alignment */
 
 

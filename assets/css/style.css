@@ -38,20 +38,27 @@ span.amp                                      { font-family:Baskerville,"Palatin
                                                 /* Styles ampersands to appear badass. */
                                                 /* http://simplebits.com/notebook/2008/08/14/ampersands-2/  for reference*/
 
-/* Header
+a                                             { color:red; }
+                                                /* Default definition for all links. */
+
+/* Misc
+-----------------------------------------------
+/////////////////////////////////////////////// */
+
+/* Head
 -----------------------------------------------
 /////////////////////////////////////////////// */
 #head .title                                  { color:#fff; font-style:italic; }
 
-/* Nav
+/* Navi
 -----------------------------------------------
 /////////////////////////////////////////////// */
 
-/* Content
+/* Cont
 -----------------------------------------------
 /////////////////////////////////////////////// */
 
-/* Footer
+/* Foot
 -----------------------------------------------
 /////////////////////////////////////////////// */
 
@@ -65,27 +72,56 @@ span.amp                                      { font-family:Baskerville,"Palatin
 02 - STYLE.CSS : LAYOUT
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 ------------------------------------------------------------------------------------------------- */
-body                                          { background:#ccc; }
-.wrapper                                      { background:#ccc; }
+body                                          { background:url('../img/fabric_of_squares_gray.png') repeat #f1f1f1; }
+
+/* Misc
+-----------------------------------------------
+/////////////////////////////////////////////// */
+.img                                          { background:#ccc; display:inline-block; overflow:hidden; }
+.img img                                      { opacity:0; transition:opacity 1s; -webkit-transition:opacity 1s; -moz-transition:opacity 1s; -ms-transition:opacity 1s; }
+.img.loaded img                               { opacity:1; }
+
 .pad                                          { background:#fff; border-radius:5px; padding:.5em; }
 
-#top-bar                                      { background:rgba(0,0,0,0.4); position:fixed; left:0; right:0; top:0; z-index:10; }
-#top-bar .col_06                              { color:#fff; margin-top:0; padding:5px 0; text-align:center; }
-
-/* Header
+/* Head
 -----------------------------------------------
 /////////////////////////////////////////////// */
 #head h1                                      { text-align:center; }
 
-/* Nav
+/* Navi
 -----------------------------------------------
 /////////////////////////////////////////////// */
 
-/* Content
+/* Cont
 -----------------------------------------------
 /////////////////////////////////////////////// */
+#cont .img                                    { float:right; margin:0 0 20px 20px; }
 
-/* Footer
+#cont svg                                     { background:#fff; box-shadow:0 5px 50px rgba(0,0,0,0.2); margin:80px auto;
+                                                animation-name:slidein;
+                                                animation-fill-mode:forwards;
+                                                animation-delay:0s;
+                                                animation-duration:0.8s;
+                                                animation-iteration-count:1;
+                                                -webkit-animation:slidein;
+                                                -webkit-animation-fill-mode:forwards;
+                                                -webkit-animation-delay:0s;
+                                                -webkit-animation-duration:0.8s;
+                                                -webkit-animation-iteration-count:1; }
+
+#cont canvas                                  { background:#fff; box-shadow:0 5px 50px rgba(0,0,0,0.2); margin:80px auto;
+                                                animation-name:slidein;
+                                                animation-fill-mode:forwards;
+                                                animation-delay:0s;
+                                                animation-duration:0.8s;
+                                                animation-iteration-count:1;
+                                                -webkit-animation:slidein;
+                                                -webkit-animation-fill-mode:forwards;
+                                                -webkit-animation-delay:0s;
+                                                -webkit-animation-duration:0.8s;
+                                                -webkit-animation-iteration-count:1; }
+
+/* Foot
 -----------------------------------------------
 /////////////////////////////////////////////// */
 
@@ -95,7 +131,38 @@ body                                          { background:#ccc; }
 
 /* -------------------------------------------------------------------------------------------------
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-03 - STYLE.CSS : MEDIAQUERIES
+03 - STYLE.CSS : KEYFRAMES
+////////////////////////////////////////////////////////////////////////////////////////////////////
+------------------------------------------------------------------------------------------------- */
+@keyframes slidein {
+	0% {
+		opacity:0;
+		transform: translate(0,50px); -ms-transform: translate(0,50px); -webkit-transform: translate(0,50px);
+	}
+	100% {
+		opacity:1;
+		transform: translate(0,0); -ms-transform: translate(0,0); -webkit-transform: translate(0,0);
+	}
+}
+
+@-webkit-keyframes slidein {
+	0% {
+		opacity:0;
+		transform: translate(0,50px); -ms-transform: translate(0,50px); -webkit-transform: translate(0,50px);
+	}
+	100% {
+		opacity:1;
+		transform: translate(0,0); -ms-transform: translate(0,0); -webkit-transform: translate(0,0); 
+	}
+}
+
+
+
+
+
+/* -------------------------------------------------------------------------------------------------
+////////////////////////////////////////////////////////////////////////////////////////////////////
+04 - STYLE.CSS : MEDIAQUERIES
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 ------------------------------------------------------------------------------------------------- */
 /* Smartphones
@@ -103,13 +170,13 @@ body                                          { background:#ccc; }
 /////////////////////////////////////////////// */
 @media (max-width:480px)                      {
 
+.mobi                                         { display:block !important; }
+.full                                         { display:none !important; }
+
+#head [class^="col_0"]                        { margin-left:0; width:100%; }
 #navi [class^="col_0"]                        { margin-left:0; width:100%; }
 #cont [class^="col_0"]                        { margin-left:0; width:100%; }
-
-.smart                                        { display:auto; }
-.port                                         { display:none; }
-.land                                         { display:none; }
-.full                                         { display:none; }
+#foot [class^="col_0"]                        { margin-left:0; width:100%; }
 
 }
 /* Portrait Tablets
@@ -117,12 +184,13 @@ body                                          { background:#ccc; }
 /////////////////////////////////////////////// */
 @media (min-width:480px) and (max-width:768px){
 
-#navi [class^="col_0"]                        { margin-left:0; width:100%; }
+.mobi                                         { display:block !important; }
+.full                                         { display:none !important; }
 
-.smart                                        { display:none; }
-.port                                         { display:auto; }
-.land                                         { display:none; }
-.full                                         { display:none; }
+#head [class^="col_0"]                        { margin-left:0; width:100%; }
+#navi [class^="col_0"]                        { margin-left:0; width:100%; }
+#cont [class^="col_0"]                        { margin-left:0; width:100%; }
+#foot [class^="col_0"]                        { margin-left:0; width:100%; }
 
 }
 /* Landscape Tablets
@@ -130,10 +198,8 @@ body                                          { background:#ccc; }
 /////////////////////////////////////////////// */
 @media (min-width:768px) and (max-width:979px){
 
-.smart                                        { display:none; }
-.port                                         { display:none; }
-.land                                         { display:auto; }
-.full                                         { display:none; }
+.mobi                                         { display:none !important; }
+.full                                         { display:block !important; }
 
 }
 /* Default
@@ -141,9 +207,7 @@ body                                          { background:#ccc; }
 /////////////////////////////////////////////// */
 @media (min-width:980px)                      {
 
-.smart                                        { display:none; }
-.port                                         { display:none; }
-.land                                         { display:none; }
-.full                                         { display:auto; }
+.mobi                                         { display:none !important; }
+.full                                         { display:block !important; }
 
 }

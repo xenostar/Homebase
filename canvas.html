@@ -29,10 +29,8 @@
 	<!-- CSS -->
 	<link type="text/css" rel="stylesheet" href="assets/css/homebase.css" />
 
-	<!-- Scripts -->
-
-	<!-- jQuery from Google Repository, load local library if load fails -->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<!-- jQuery from Google Repository -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 	<!--[if lt IE 9]>
@@ -42,25 +40,20 @@
 	<!-- FitText for responsive type. MUST be after CSS/jQuery includes -->
 	<script type="text/javascript" src="assets/scripts/fittext.js"></script>
 
-	<!-- Custom Scripts & Plugins -->
-	<script type="text/javascript" src="assets/scripts/scripts.js"></script>
+	<!-- Must be last header item-->
+	<!-- Custom Scripts & Plugins for Header -->
+	<script type="text/javascript" src="assets/scripts/scripts_top.js"></script>
 
 </head>
 <body id="top">
-<div class="wrapper gut-side gut-top-20">
+<div class="wrapper gut-side">
 
-	<div class="section" id="anim">
+	<div class="section" id="cont">
 		<div class="row">
 
 			<div class="col_06">
 
-				<h1 class="fadein">I'm just going to slide in on page load, kthx</h1>
-
-				<h1 class="repeat">repeat</h1>
-
-				<h1 class="hov">Hover over me!</h1>
-
-				<div class="box"><div class="meow">MEOW MEOW MEOW</div></div>
+				<canvas id="canvas" width="400" height="300">Your browser sucks. I feel sorry for you son.</canvas>
 
 			</div>
 
@@ -68,5 +61,7 @@
 	</div>
 
 </div>
+	<!-- Custom Scripts & Plugins for Footer -->
+	<script type="text/javascript" src="assets/scripts/scripts_bot.js"></script>
 </body>
 </html>

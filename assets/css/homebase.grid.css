@@ -19,12 +19,13 @@ body                                          { overflow-x:hidden; }
 
 .section                                      { margin:0; position:relative; padding-left:20px; padding-right:20px; vertical-align:top; }
                                                 /* The .section defines an area of the site with it's own functionality, i.e.: Header Section, Navi Section, Content Section, Footer Section 
+                                                   The .section always has 20 pixels of padding-left and right for mobile views. Good for content sections where text shouldn't touch screen edge.
                                                    !!! There must be at least one .section per .wrapper */
 
 .section_full                                 { margin:0; position:relative; vertical-align:top; width:100%; }
-                                                /* An optional .section that is always 100% width */
+                                                /* An optional .section without any padding on the sides. Good for things like Sliders that need to be flush with the screen edge. */
 
-.row                                          { margin:0 auto; position:relative; vertical-align:top; max-width:1000px; }
+.row                                          { margin:0 auto; position:relative; vertical-align:top; max-width:1000px; zoom:1; }
                                                 /* The .row defines a horizontal space in which .col_0X are inserted to organize content.
                                                    !!! There must be at least one .row per .section */
 
@@ -34,20 +35,20 @@ body                                          { overflow-x:hidden; }
 /* Gutterless Grids
 -----------------------------------------------
 /////////////////////////////////////////////// */
-.gut-none .col_06                             { float:left; margin:0; vertical-align:top; width:100%; }
-.gut-none .col_04                             { float:left; margin:0; vertical-align:top; width:66.666%; }
-.gut-none .col_03                             { float:left; margin:0; vertical-align:top; width:50%; }
-.gut-none .col_02                             { float:left; margin:0; vertical-align:top; width:33.333%; }
-.gut-none .col_01                             { float:left; margin:0; vertical-align:top; width:16.666%; }
+.gut-none .col_06                             { float:left; margin:0; position:relative; vertical-align:top; width:100%; }
+.gut-none .col_04                             { float:left; margin:0; position:relative; vertical-align:top; width:66.666%; }
+.gut-none .col_03                             { float:left; margin:0; position:relative; vertical-align:top; width:50%; }
+.gut-none .col_02                             { float:left; margin:0; position:relative; vertical-align:top; width:33.333%; }
+.gut-none .col_01                             { float:left; margin:0; position:relative; vertical-align:top; width:16.666%; }
 
 /* Gutter Grids
 -----------------------------------------------
 /////////////////////////////////////////////// */
-.gut-side .col_06                             { float:left; margin-left:2%; vertical-align:top; width:100%; }
-.gut-side .col_04                             { float:left; margin-left:2%; vertical-align:top; width:66%; }
-.gut-side .col_03                             { float:left; margin-left:2%; vertical-align:top; width:49%; }
-.gut-side .col_02                             { float:left; margin-left:2%; vertical-align:top; width:32%; }
-.gut-side .col_01                             { float:left; margin-left:2%; vertical-align:top; width:15%; }
+.gut-side .col_06                             { float:left; margin-left:2%; position:relative; vertical-align:top; width:100%; }
+.gut-side .col_04                             { float:left; margin-left:2%; position:relative; vertical-align:top; width:66%; }
+.gut-side .col_03                             { float:left; margin-left:2%; position:relative; vertical-align:top; width:49%; }
+.gut-side .col_02                             { float:left; margin-left:2%; position:relative; vertical-align:top; width:32%; }
+.gut-side .col_01                             { float:left; margin-left:2%; position:relative; vertical-align:top; width:15%; }
 .gut-side .row > [class^="col_0"]:first-child { margin-left:0; }
                                                 /* Removes left margin from first .col_0X of each .row */
 
@@ -66,7 +67,7 @@ body                                          { overflow-x:hidden; }
 .gut-bot-40 [class^="col_0"]                 { margin-bottom:40px; }
 
 /*
-Next grids for reference~
+Nest grids for reference~
 .col_06 > .col_03                            { margin:0 0 0 2%; width:49%; }
 .col_04 > .col_02                            { margin:0 0 0 3.030303030303030303030303030303%; width:48.484848484848484848484848484848%; }
 .col_04 > .col_01                            { margin:0 0 0 3.030303030303030303030303030303%; width:22.727272727272727272727272727273%; }
