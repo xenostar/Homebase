@@ -3,30 +3,68 @@
 // SCRIPTS_TOP.JS : SCRIPTS TO BE PLACED AT THE TOP OF THE PAGE
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 ------------------------------------------------------------------------------------------------- */
-/* Functions
+/* Core Functions
 -----------------------------------------------
 /////////////////////////////////////////////// */
-function imgLoaded(img){
+(function()
+{
+	var method;
+	var noop = function () {};
+	var methods = [
+		'assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error',
+		'exception', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log',
+		'markTimeline', 'profile', 'profileEnd', 'table', 'time', 'timeEnd',
+		'timeStamp', 'trace', 'warn'
+	];
+	var length = methods.length;
+	var console = (window.console = window.console || {});
+
+	while (length--)
+	{
+		method = methods[length];
+
+		// Only stub undefined methods.
+		if (!console[method])
+		{
+			console[method] = noop;
+		}
+	}
+}());
+function imgLoaded(img)
+{
 	$(img).parent().addClass('loaded');
 };
-function preCache(){
-	$.each(imagePreload, function(){
-		var img = new Image();
-		img.src = this;
-	});
+function preCache()
+{
+	try
+	{
+		$.each(imagePreload, function(){
+			var img = new Image();
+			img.src = this;
+		});
+	}
+	catch(err)
+	{
+		//console.log("Error Logged: " + err);
+	}
 };
-function draw() {
-	var canvas = document.getElementById("canvas");
-	if (canvas.getContext) {
-		var ctx = canvas.getContext("2d");
-
-		ctx.fillStyle = "rgb(200,0,0)";
-		ctx.fillRect (10, 10, 55, 50);
-
-		ctx.fillStyle = "rgba(0, 0, 200, 0.5)";
-		ctx.fillRect (30, 30, 55, 50);
+function validateEmail($email)
+{
+	var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+	if(!emailReg.test($email))
+	{
+		return false;
+	} else {
+		return true;
 	}
 }
+
+
+
+/* Custom Functions
+-----------------------------------------------
+/////////////////////////////////////////////// */
+
 
 
 /* DOCUMENT.READY - Fires as soon as the DOM is ready
@@ -44,9 +82,6 @@ $(document).ready(function() {
 -----------------------------------------------
 /////////////////////////////////////////////// */
 $(window).load(function() {
-
-	// Canvas
-	draw();
 
 	// Leave this last in here
 	preCache();

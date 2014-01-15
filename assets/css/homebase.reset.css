@@ -16,7 +16,7 @@ fieldset,form,label,legend,
 table,caption,tbody,tfoot,thead,tr,th,td,
 article,aside,canvas,details,figcaption,figure,
 footer,header,hgroup,menu,nav,section,
-summary,time,mark,audio,video                 { border:0; margin:0; outline:0; padding:0; position:relative; }
+summary,time,mark,audio,video                 { border:0; margin:0; outline:0; padding:0; }
                                                 /* Removes all rogue inconsistencies */
 
 html                                          { overflow-y:scroll; }
@@ -89,7 +89,7 @@ sub                                           { bottom:-0.25em; }
 /* FORMS
 -----------------------------------------------
 /////////////////////////////////////////////// */
-label,textarea                                { cursor:pointer; }
+label                                         { cursor:pointer; }
                                                 /* Indicates these areas have a function on-click */
 
 textarea:active,textarea:focus                { cursor:text; }
