@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="fittext.js" server="ftp.xenostar.net//public_html/portfolio/websites/homebase/" local="129911730600000000" remote="130342924800000000" Dst="1" />
 <file name="scripts_bot.js" server="ftp.xenostar.net//public_html/portfolio/websites/homebase/" local="130200518370000000" remote="130342924800000000" Dst="1" />
-<file name="scripts_top.js" server="ftp.xenostar.net//public_html/portfolio/websites/homebase/" local="130342962100861752" remote="130342926000000000" Dst="1" />
+<file name="scripts_top.js" server="ftp.xenostar.net//public_html/portfolio/websites/homebase/" local="130350732355094107" remote="130350696000000000" Dst="1" />
+<file name="scripts_lib.js" server="ftp.xenostar.net//public_html/portfolio/websites/homebase/" local="130350732131561322" remote="130350696000000000" Dst="1" />
+<file name="scripts_bot.js" server="ftp.xenostar.net//public_html/homebase/" local="130200518370000000" remote="130350700800000000" Dst="1" />
+<file name="scripts_lib.js" server="ftp.xenostar.net//public_html/homebase/" local="130350732131561322" remote="130350700800000000" Dst="1" />
+<file name="scripts_top.js" server="ftp.xenostar.net//public_html/homebase/" local="130350732355094107" remote="130350700800000000" Dst="1" />
 </dwsync>

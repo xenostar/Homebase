@@ -3,11 +3,14 @@
 <file name=".gitignore" server="ftp.xenostar.net//public_html/portfolio/websites/homebase/" local="130023207790000000" remote="130200315000000000" Dst="-1" />
 <file name=".htaccess" server="ftp.xenostar.net//public_html/portfolio/websites/homebase/" local="130023095930000000" remote="130200315000000000" Dst="-1" />
 <file name="humans.txt" server="ftp.xenostar.net//public_html/portfolio/websites/homebase/" local="129984190200000000" remote="130342924800000000" Dst="1" />
-<file name="index.html" server="ftp.xenostar.net//public_html/portfolio/websites/homebase/" local="130200427555787814" remote="130200391800000000" Dst="-1" />
+<file name="index.html" server="ftp.xenostar.net//public_html/portfolio/websites/homebase/" local="130350733042933449" remote="130350697200000000" Dst="1" />
 <file name="README" server="ftp.xenostar.net//public_html/portfolio/websites/homebase/" local="130004391845227876" remote="130200315000000000" Dst="-1" />
 <file name="robots.txt" server="ftp.xenostar.net//public_html/portfolio/websites/homebase/" local="130004391840000000" remote="130342924800000000" Dst="1" />
-<file name="template.html" server="ftp.xenostar.net//public_html/portfolio/websites/homebase/" local="130200416880000000" remote="130342924800000000" Dst="1" />
-<file name="images.html" server="ftp.xenostar.net//public_html/portfolio/websites/homebase/" local="130200818363548132" remote="130200781800000000" Dst="-1" />
-<file name="canvas.html" server="ftp.xenostar.net//public_html/portfolio/websites/homebase/" local="130298712040291928" remote="130342924800000000" Dst="1" />
-<file name="svg.html" server="ftp.xenostar.net//public_html/portfolio/websites/homebase/" local="130203811748490903" remote="130342924800000000" Dst="1" />
+<file name="images.html" server="ftp.xenostar.net//public_html/portfolio/websites/homebase/" local="130200818360000000" remote="130350699000000000" Dst="1" />
+<file name="index.html" server="ftp.xenostar.net//public_html/homebase/" local="130350738784981876" remote="130350702600000000" Dst="1" />
+<file name="images.html" server="ftp.xenostar.net//public_html/homebase/" local="130200818360000000" remote="130350700800000000" Dst="1" />
+<file name="README" server="ftp.xenostar.net//public_html/homebase/" local="130004391840000000" remote="130350700800000000" Dst="1" />
+<file name="humans.txt" server="ftp.xenostar.net//public_html/homebase/" local="129984190200000000" remote="130350700800000000" Dst="1" />
+<file name=".htaccess" server="ftp.xenostar.net//public_html/homebase/" local="130023095931947086" remote="130350700800000000" Dst="1" />
+<file name="robots.txt" server="ftp.xenostar.net//public_html/homebase/" local="130004391840000000" remote="130350700800000000" Dst="1" />
 </dwsync>

@@ -1,12 +1,9 @@
 @charset "UTF-8"; /* Sets the encoding of the style sheet to Unicode UTF-8. Don't move it.        */
 /* -------------------------------------------------------------------------------------------------
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-01 - STYLE.CSS : TYPOGRAPHY
+01 - STYLE.CSS : GENERAL STUFF FIRST
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 ------------------------------------------------------------------------------------------------- */
-/* Main Content
------------------------------------------------
-/////////////////////////////////////////////// */
 body                                          { color:#444; font-family:'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif; line-height:1.125em; }
 
 .section_full,
@@ -41,28 +38,6 @@ span.amp                                      { font-family:Baskerville,"Palatin
 a                                             { color:red; }
                                                 /* Default definition for all links. */
 
-/* Misc
------------------------------------------------
-/////////////////////////////////////////////// */
-
-/* Head
------------------------------------------------
-/////////////////////////////////////////////// */
-#head .title                                  { color:#fff; font-style:italic; }
-
-/* Navi
------------------------------------------------
-/////////////////////////////////////////////// */
-
-/* Cont
------------------------------------------------
-/////////////////////////////////////////////// */
-
-/* Foot
------------------------------------------------
-/////////////////////////////////////////////// */
-
-
 
 
 
@@ -81,45 +56,24 @@ body                                          { background:url('../img/fabric_of
 .img img                                      { opacity:0; transition:opacity 1s; -webkit-transition:opacity 1s; -moz-transition:opacity 1s; -ms-transition:opacity 1s; }
 .img.loaded img                               { opacity:1; }
 
-.pad                                          { background:#fff; border-radius:5px; padding:.5em; }
+.pad                                          { background:#fff; border:1px solid #ddd; box-shadow:0 1px 0 #ddd; border-radius:5px; padding:.5em; }
+
 
 /* Head
 -----------------------------------------------
 /////////////////////////////////////////////// */
-#head h1                                      { text-align:center; }
+.head h1                                      { font-style:italic; text-align:center; }
+
 
 /* Navi
 -----------------------------------------------
 /////////////////////////////////////////////// */
 
+
 /* Cont
 -----------------------------------------------
 /////////////////////////////////////////////// */
-#cont .img                                    { float:right; margin:0 0 20px 20px; }
 
-#cont svg                                     { background:#fff; box-shadow:0 5px 50px rgba(0,0,0,0.2); margin:80px auto;
-                                                animation-name:slidein;
-                                                animation-fill-mode:forwards;
-                                                animation-delay:0s;
-                                                animation-duration:0.8s;
-                                                animation-iteration-count:1;
-                                                -webkit-animation:slidein;
-                                                -webkit-animation-fill-mode:forwards;
-                                                -webkit-animation-delay:0s;
-                                                -webkit-animation-duration:0.8s;
-                                                -webkit-animation-iteration-count:1; }
-
-#cont canvas                                  { background:#fff; box-shadow:0 5px 50px rgba(0,0,0,0.2); margin:80px auto;
-                                                animation-name:slidein;
-                                                animation-fill-mode:forwards;
-                                                animation-delay:0s;
-                                                animation-duration:0.8s;
-                                                animation-iteration-count:1;
-                                                -webkit-animation:slidein;
-                                                -webkit-animation-fill-mode:forwards;
-                                                -webkit-animation-delay:0s;
-                                                -webkit-animation-duration:0.8s;
-                                                -webkit-animation-iteration-count:1; }
 
 /* Foot
 -----------------------------------------------
@@ -173,10 +127,7 @@ body                                          { background:url('../img/fabric_of
 .mobi                                         { display:block !important; }
 .full                                         { display:none !important; }
 
-#head [class^="col_0"]                        { margin-left:0; width:100%; }
-#navi [class^="col_0"]                        { margin-left:0; width:100%; }
-#cont [class^="col_0"]                        { margin-left:0; width:100%; }
-#foot [class^="col_0"]                        { margin-left:0; width:100%; }
+.cont [class^="col_0"]                        { margin-left:0; width:100%; }
 
 }
 /* Portrait Tablets
@@ -187,10 +138,7 @@ body                                          { background:url('../img/fabric_of
 .mobi                                         { display:block !important; }
 .full                                         { display:none !important; }
 
-#head [class^="col_0"]                        { margin-left:0; width:100%; }
-#navi [class^="col_0"]                        { margin-left:0; width:100%; }
-#cont [class^="col_0"]                        { margin-left:0; width:100%; }
-#foot [class^="col_0"]                        { margin-left:0; width:100%; }
+.cont [class^="col_0"]                        { margin-left:0; width:100%; }
 
 }
 /* Landscape Tablets
