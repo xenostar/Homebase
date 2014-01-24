@@ -60,7 +60,7 @@ function preCache()
 
 
 
-/* FUNCT - Validates emails passed to it
+/* FUNC - Validates emails passed to it
 ----------------------------------------------- */
 function validateEmail($email)
 {
