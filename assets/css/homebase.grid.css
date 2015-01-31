@@ -32,6 +32,7 @@ body                                          { overflow-x:hidden; }
 .row:after                                    { display:block; clear:both; content:"."; font-size:0; height:0; visibility:hidden; }
                                                 /* We apply a clearfix here to stop the floats from messing everything up */
 
+
 /* Gutterless Grids
 -----------------------------------------------
 /////////////////////////////////////////////// */
@@ -40,6 +41,7 @@ body                                          { overflow-x:hidden; }
 .gut-none .col_03                             { float:left; margin:0; position:relative; vertical-align:top; width:50%; }
 .gut-none .col_02                             { float:left; margin:0; position:relative; vertical-align:top; width:33.333%; }
 .gut-none .col_01                             { float:left; margin:0; position:relative; vertical-align:top; width:16.666%; }
+
 
 /* Gutter Grids
 -----------------------------------------------
@@ -52,6 +54,7 @@ body                                          { overflow-x:hidden; }
 .gut-side .row > [class^="col_0"]:first-child { margin-left:0; }
                                                 /* Removes left margin from first .col_0X of each .row */
 
+
 /* Top Gutters
 -----------------------------------------------
 /////////////////////////////////////////////// */
@@ -59,12 +62,14 @@ body                                          { overflow-x:hidden; }
 .gut-top-20 [class^="col_0"]                 { margin-top:20px; }
 .gut-top-40 [class^="col_0"]                 { margin-top:40px; }
 
+
 /* Bottom Gutters
 -----------------------------------------------
 /////////////////////////////////////////////// */
 .gut-bot [class^="col_0"]                    { margin-bottom:2%; }
 .gut-bot-20 [class^="col_0"]                 { margin-bottom:20px; }
 .gut-bot-40 [class^="col_0"]                 { margin-bottom:40px; }
+
 
 /*
 Nest grids for reference~
@@ -74,7 +79,3 @@ Nest grids for reference~
 .col_03 > .col_01                            { margin:0 0 0 4.081632653061224489795918367347%; width:30.612244897959183673469387755102%; }
 .col_02 > .col_01                            { margin:0 0 0 6.25%; width:46.875%; }
 */
-
-
-
-
