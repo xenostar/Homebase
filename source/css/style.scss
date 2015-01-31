@@ -76,9 +76,7 @@ LAYOUT SECTIONS
 Formal syntax: <single-animation-name> || <time> || <timing-function> || <time> || <single-animation-iteration-count> || <single-animation-direction> || <single-animation-fill-mode> || <single-animation-play-state>
 */
 
-.wf-loading .welcome,
 .wf-loading .title                               { opacity:0; }
-.wf-active .welcome,
 .wf-active .title                                { @include animation(fadeIn, 1.0s, 1.75s); }
                                                    /* Handles Typekit Loading Events */
 
@@ -98,19 +96,19 @@ Formal syntax: <single-animation-name> || <time> || <timing-function> || <time> 
 /* Layout Section - Header
 -----------------------------------------------
 /////////////////////////////////////////////// */
-#header                                          { }
+#head                                            { }
 
 
 /* Layout Section - Content
 -----------------------------------------------
 /////////////////////////////////////////////// */
-#content                                         { }
+#cont                                            { }
 
 
 /* Layout Section - Footer
 -----------------------------------------------
 /////////////////////////////////////////////// */
-#footer                                          { }
+#foot                                            { }
 
 
 
@@ -126,9 +124,9 @@ PAGE SECTIONS
 /////////////////////////////////////////////// */
 .home                                            { }
 .home #navi                                      { }
-.home #header                                    { }
-.home #content                                   { }
-.home #footer                                    { }
+.home #head                                      { }
+.home #cont                                      { }
+.home #foot                                      { }
 
 
 /* Page - Test
@@ -136,6 +134,6 @@ PAGE SECTIONS
 /////////////////////////////////////////////// */
 .test                                            { }
 .test #navi                                      { }
-.test #header                                    { }
-.test #content                                   { }
-.test #footer                                    { }
+.test #head                                      { }
+.test #cont                                      { }
+.test #foot                                      { }
