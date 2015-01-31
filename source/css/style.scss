@@ -1,0 +1,141 @@
+/* -------------------------------------------------------------------------------------------------
+////////////////////////////////////////////////////////////////////////////////////////////////////
+LAYOUT SETUP
+////////////////////////////////////////////////////////////////////////////////////////////////////
+------------------------------------------------------------------------------------------------- */
+/* Base Styles
+-----------------------------------------------
+/////////////////////////////////////////////// */
+body                                             { @include background(); background-color:#272525;
+                                                   color:#fff; font-family:$font-stack; font-style:normal; font-weight:300; }
+
+img                                              { max-width:100%; display:block; vertical-align:bottom; }
+                                                   /* Responsive images. Also, fixed spacing at bottom of image sometimes. */
+
+div,span,
+ol,ol li,
+ul,ul li                                         { list-style-type:none; vertical-align:top; }
+                                                   /* Fixes alignment issues */
+
+p                                                { vertical-align:top; }
+
+h1                                               { display:block; font-size:3.0em; font-family:$font-stack-head; font-style:normal; font-weight:400; line-height:1.125em; }
+h2                                               { display:block; font-size:2.5em; font-family:$font-stack-head; font-style:normal; font-weight:400; line-height:1.125em; }
+h3                                               { display:block; font-size:2.0em; font-family:$font-stack-head; font-style:normal; font-weight:400; line-height:1.125em; }
+h4                                               { display:block; font-size:1.5em; font-family:$font-stack-head; font-style:normal; font-weight:400; line-height:1.125em; }
+h5                                               { display:block; font-size:1.0em; font-family:$font-stack-head; font-style:normal; font-weight:400; line-height:1.125em; }
+h6                                               { display:block; font-size:0.5em; font-family:$font-stack-head; font-style:normal; font-weight:400; line-height:1.125em; }
+
+span.amp                                         { font-family:Baskerville,"Palatino Linotype",Times New Roman,serif; font-style:italic; font-weight:400; line-height:normal; }
+                                                   /* Styles ampersands to appear badass. */
+                                                   /* http://simplebits.com/notebook/2008/08/14/ampersands-2/ for reference*/
+
+a                                                { color:#fff; }
+                                                   /* Default definition for all links. */
+
+
+
+
+
+/* -------------------------------------------------------------------------------------------------
+////////////////////////////////////////////////////////////////////////////////////////////////////
+LAYOUT SECTIONS
+////////////////////////////////////////////////////////////////////////////////////////////////////
+------------------------------------------------------------------------------------------------- */
+/* Layout Section - Basic Setup
+-----------------------------------------------
+/////////////////////////////////////////////// */
+.img                                             { position:relative; padding-top:75%; overflow:hidden; }
+.img img                                         { position:absolute; top:0; opacity:0; width:100%; @include transition(opacity 1s ease); }
+.img.loaded img                                  { opacity:1; }
+
+.imgc                                            { display:inline-block; overflow:hidden; }
+.imgc img                                        { opacity:0; @include transition(opacity 1s ease); }
+.imgc.loaded img                                 { opacity:1; }
+
+.fade-in                                         { opacity:1 !important; }
+.fade-out                                        { opacity:0 !important; }
+
+#load,
+#load img                                        { display:none; }
+
+.re_1px                                          { margin-left:-1px; }
+.re_2px                                          { margin-left:-2px; }
+.re_3px                                          { margin-left:-3px; }
+.re_4px                                          { margin-left:-4px; }
+.re_5px                                          { margin-left:-5px; }
+.re_6px                                          { margin-left:-6px; }
+.re_7px                                          { margin-left:-7px; }
+.re_8px                                          { margin-left:-8px; }
+.re_9px                                          { margin-left:-9px; }
+.re_10px                                         { margin-left:-10px; }
+
+/*
+.wf-loading h1                                   { }
+.wf-active h1                                    { opacity:1 !important; }
+Formal syntax: <single-animation-name> || <time> || <timing-function> || <time> || <single-animation-iteration-count> || <single-animation-direction> || <single-animation-fill-mode> || <single-animation-play-state>
+*/
+
+.wf-loading .welcome,
+.wf-loading .title                               { opacity:0; }
+.wf-active .welcome,
+.wf-active .title                                { @include animation(fadeIn, 1.0s, 1.75s); }
+                                                   /* Handles Typekit Loading Events */
+
+
+/* Layout Section - Banner
+-----------------------------------------------
+/////////////////////////////////////////////// */
+.banner                                          { }
+
+
+/* Layout Section - Navigation
+-----------------------------------------------
+/////////////////////////////////////////////// */
+#navi                                            { }
+
+
+/* Layout Section - Header
+-----------------------------------------------
+/////////////////////////////////////////////// */
+#header                                          { }
+
+
+/* Layout Section - Content
+-----------------------------------------------
+/////////////////////////////////////////////// */
+#content                                         { }
+
+
+/* Layout Section - Footer
+-----------------------------------------------
+/////////////////////////////////////////////// */
+#footer                                          { }
+
+
+
+
+
+/* -------------------------------------------------------------------------------------------------
+////////////////////////////////////////////////////////////////////////////////////////////////////
+PAGE SECTIONS
+////////////////////////////////////////////////////////////////////////////////////////////////////
+------------------------------------------------------------------------------------------------- */
+/* Page - Home
+-----------------------------------------------
+/////////////////////////////////////////////// */
+.home                                            { }
+.home #navi                                      { }
+.home #header                                    { }
+.home #content                                   { }
+.home #footer                                    { }
+
+
+/* Page - Test
+-----------------------------------------------
+/////////////////////////////////////////////// */
+.test                                            { }
+.test #navi                                      { }
+.test #header                                    { }
+.test #content                                   { }
+.test #footer                                    { }

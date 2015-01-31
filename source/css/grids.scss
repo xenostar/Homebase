@@ -1,0 +1,80 @@
+/* -------------------------------------------------------------------------------------------------
+////////////////////////////////////////////////////////////////////////////////////////////////////
+GRID SETUP
+////////////////////////////////////////////////////////////////////////////////////////////////////
+------------------------------------------------------------------------------------------------- */
+/* Base Grid Classes
+-----------------------------------------------
+/////////////////////////////////////////////// */
+body                                             { overflow-x:hidden; }
+
+#app-menu                                        { height:100%; overflow:hidden; position:fixed; top:0; width:0; z-index:9999; }
+                                                /* A mobile-friendly menu section that sits inline-block next to the .wrapper
+                                                   !!! There is usually only one app-menu per page */
+
+.wrapper                                         { margin:0; position:relative; overflow:hidden; text-align:left; vertical-align:top; left:0; width:100%; }
+                                                /* The .wrapper defines the overall boundary of the site. All content appears inside the .wrapper
+                                                   !!! There is usually only one .wrapper per page */
+
+.section                                         { margin:0; position:relative; padding-left:20px; padding-right:20px; vertical-align:top; }
+                                                /* The .section defines an area of the site with it's own functionality, i.e.: Header Section, Navi Section, Content Section, Footer Section
+                                                   The .section always has 20 pixels of padding-left and right for mobile views. Good for content sections where text shouldn't touch screen edge.
+                                                   !!! There must be at least one .section per .wrapper */
+
+.section_full                                    { margin:0; position:relative; vertical-align:top; width:100%; }
+                                                /* An optional .section without any padding on the sides. Good for things like JS sliders that need to be flush with the screen edge. */
+
+.section.full                                    { margin:0; position:relative; padding-left:0; padding-right:0; vertical-align:top; width:100%; }
+
+.row                                             { margin:0 auto; position:relative; vertical-align:top; max-width:1000px; zoom:1; }
+                                                /* The .row defines a horizontal space in which .col_0X are inserted to organize content.
+                                                   !!! There must be at least one .row per .section */
+
+.row.full                                        { max-width:none; }
+
+.row:after                                       { display:block; clear:both; content:"."; font-size:0; height:0; visibility:hidden; }
+                                                /* We apply a clearfix here to stop the floats from messing everything up */
+
+
+/* Percentage-Based Gutterless Grids - Must be flush
+-----------------------------------------------
+/////////////////////////////////////////////// */
+.col_p25                                         { float:left; margin:0; position:relative; vertical-align:top; width:25%; }
+
+
+/* Gutterless Grids
+-----------------------------------------------
+/////////////////////////////////////////////// */
+.gut-none .col_06                                { float:left; margin:0; position:relative; vertical-align:top; width:100%; }
+.gut-none .col_04                                { float:left; margin:0; position:relative; vertical-align:top; width:66.666%; }
+.gut-none .col_03                                { float:left; margin:0; position:relative; vertical-align:top; width:50%; }
+.gut-none .col_02                                { float:left; margin:0; position:relative; vertical-align:top; width:33.333%; }
+.gut-none .col_01                                { float:left; margin:0; position:relative; vertical-align:top; width:16.666%; }
+
+
+/* Gutter Grids
+-----------------------------------------------
+/////////////////////////////////////////////// */
+.gut-side .col_06                                { float:left; margin-left:2%; position:relative; vertical-align:top; width:100%; }
+.gut-side .col_04                                { float:left; margin-left:2%; position:relative; vertical-align:top; width:66%; }
+.gut-side .col_03                                { float:left; margin-left:2%; position:relative; vertical-align:top; width:49%; }
+.gut-side .col_02                                { float:left; margin-left:2%; position:relative; vertical-align:top; width:32%; }
+.gut-side .col_01                                { float:left; margin-left:2%; position:relative; vertical-align:top; width:15%; }
+.gut-side .row > [class^="col_"]:first-child     { margin-left:0; }
+                                                /* Removes left margin from first .col_0X of each .row */
+
+
+/* Top Gutter Helper Classes
+-----------------------------------------------
+/////////////////////////////////////////////// */
+.gut-top [class^="col_"]                         { margin-top:2%; }
+.gut-top-20 [class^="col_"]                      { margin-top:20px; }
+.gut-top-40 [class^="col_"]                      { margin-top:40px; }
+
+
+/* Bottom Gutter Helper Classes
+-----------------------------------------------
+/////////////////////////////////////////////// */
+.gut-bot [class^="col_"]                         { margin-bottom:2%; }
+.gut-bot-20 [class^="col_"]                      { margin-bottom:20px; }
+.gut-bot-40 [class^="col_"]                      { margin-bottom:40px; }

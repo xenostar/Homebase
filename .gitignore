@@ -1,3 +1,2 @@
-# Ignoring these directories
-_notes/				# Ignores the _notes/ directory and any files in it
-/_notes/			# Ignores the _notes/ directory hopefully
+/node_modules
+/.sass-cache
