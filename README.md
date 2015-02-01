@@ -3,3 +3,6 @@ The Homebase Framework is a responsive SCSS/JS/HTML template bootstrap designed 
 
 ## Notes
 You will need to run `npm install` and then run `grun watch` to compile your source files into the `/assets` folder.
+
+## Requirements
+Coming soon.
