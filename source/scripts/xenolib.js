@@ -1,9 +1,9 @@
 /* -------------------------------------------------------------------------------------------------
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-// JS HELPER LIBRARY
+// XENOSTAR JS HELPER LIBRARY
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 ------------------------------------------------------------------------------------------------- */
-/* FUNC - Creates Console object to avoid IE issues
+/* Creates console object to avoid IE issues
 ----------------------------------------------- */
 (function()
 {
@@ -31,7 +31,7 @@
 }());
 
 
-/* FUNC - Creates Console object to avoid IE issues
+/* Starts loading images in the background
 ----------------------------------------------- */
 function preCache()
 {
@@ -46,10 +46,10 @@ function preCache()
     {
         //console.log("Error Logged: " + err);
     }
-};
+}
 
 
-/* FUNC - Validates emails passed to it
+/* Validates emails passed to it
 ----------------------------------------------- */
 function validateEmail($email)
 {
@@ -63,10 +63,10 @@ function validateEmail($email)
     {
         return true;
     }
-};
+}
 
 
-/* FUNC - Browser Info
+/* Browser Info
 ----------------------------------------------- */
 function browserInfo()
 {
@@ -90,12 +90,12 @@ function browserInfo()
     {
         return ($(window).width() / $(window).height());
     }
-};
+}
 
 
-/* FUNC - Returns a random integer
+/* Returns a random integer
 ----------------------------------------------- */
 function randomInt(min,max)
 {
     return Math.floor(Math.random()*(max-min+1)+min);
-};
+}

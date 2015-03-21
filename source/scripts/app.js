@@ -1,23 +1,27 @@
-/* -------------------------------------------------------------------------------------------------
-////////////////////////////////////////////////////////////////////////////////////////////////////
-// Application Logic
-////////////////////////////////////////////////////////////////////////////////////////////////////
-------------------------------------------------------------------------------------------------- */
+/*
+|--------------------------------------------------------------------------
+| Define how the App should start up
+|--------------------------------------------------------------------------
+|
+| The function that loads global and local site logic for the app.
+|
+*/
 function appStart()
 {
     /**
-     * @desc The Laravel page route name is echo'd into the
-     *       HTML tag as the first class
+     * The Laravel page route name is echo'd into the
+     * HTML tag as the first class.
      *
      */
     var routeName = $('html').attr('class').split(' ')[0];
 
 
     /**
-     * @desc  Load Global Site Logic
-     * @param We pass the routeName paramater so we can do things
-     *        on a per-route basis without having to grab
-     *        the routeName again from the DOM.
+     * Load Global Site Logic
+     *
+     * We pass the routeName paramater so we can do things
+     * on a per-route basis without having to grab
+     * the routeName again from the DOM.
      *
      */
     try {
@@ -28,12 +32,12 @@ function appStart()
         console.log("A global error was thrown: " + error);
     }
 
-
     /**
-     * @desc  Load Local Page Logic
-     *        A page-specific JS function is dynamically called based on the
-     *        routeName we obtained earlier. We prefix the routeName with 'js_'
-     *        so as to not call any malicious function names.
+     * Load Local Page Logic
+     *
+     * A page-specific JS function is dynamically called based on the
+     * routeName we obtained earlier. We prefix the routeName with 'js_'
+     * so as to not call any malicious function names.
      *
      */
     try {
@@ -43,22 +47,23 @@ function appStart()
     catch(error) {
         console.log("A local error was thrown: " + error);
     }
-};
+}
 
 
 
 
 
 
-/* DOCUMENT.READY - Fires as soon as the DOM is ready
------------------------------------------------
-/////////////////////////////////////////////// */
+/*
+|--------------------------------------------------------------------------
+| Start the Application
+|--------------------------------------------------------------------------
+|
+| We call the appStart() function on document ready.
+|
+*/
 $(document).ready(function()
 {
-    /**
-     * @desc Start the application
-     *
-     */
     appStart();
 });
 
@@ -66,16 +71,23 @@ $(document).ready(function()
 
 
 
-/* DOCUMENT.LOAD - Fires only when all content for the page has been downloaded and rendered
------------------------------------------------
-/////////////////////////////////////////////// */
+/*
+|--------------------------------------------------------------------------
+| Window.Load Functions
+|--------------------------------------------------------------------------
+|
+| Below is functionality that should only be run after the page has
+| fully loaded every asset needed: DOM & Images, CSS & JS.
+|
+*/
 $(window).load(function()
 {
     /**
-     * @desc  Leave this last in here!
-     *        Loads images in background after page-load
-     *        Edit images that need to be loaded in header template array
-     *        We leave them in the template so we can have page-specific loading
+     * Start caching images for next page.
+     *
+     * Loads images in background after page load.
+     * Images to preload can be configured in the imagePreload[]
+     * array found in the header template in Laravel.
      *
      */
     preCache();

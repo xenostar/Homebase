@@ -30,7 +30,7 @@ module.exports = function(grunt){
         // JS Concat -> Minify
         concat: {
             dist: {
-                src: ['source/scripts/frameworks.js', 'source/scripts/lib.js', 'source/scripts/app.js', 'source/scripts/pages/*.js'],
+                src: ['source/scripts/frameworks.js', 'source/scripts/xenolib.js', 'source/scripts/app.js', 'source/scripts/pages/*.js'],
                 dest: 'assets/scripts/app.min.js',
             }
         },
