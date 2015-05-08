@@ -6,7 +6,7 @@
 | The javascript logic that should apply to the default page.
 |
 */
-function js_default()
+function js_rename()
 {
     var header  = $('header');
     var nav     = $('nav');
