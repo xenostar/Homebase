@@ -12,7 +12,6 @@ function js_rename()
     var nav     = $('nav');
     var bInfo   = new browserInfo();
 
-
     /**
      * Load functions in order
      *
@@ -20,8 +19,7 @@ function js_rename()
     this.start = function()
     {
         this.foo();
-    }
-
+    };
 
     /**
      * @desc Basic function demo
@@ -31,5 +29,4 @@ function js_rename()
     {
         console.log("02 - Hello world, LOCAL application logic loaded!");
     };
-
 }

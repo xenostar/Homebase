@@ -16,7 +16,6 @@ function js_global(routeName)
     var nav     = $('nav');
     var bInfo   = new browserInfo();
 
-
     /**
      * Load functions in order
      *
@@ -24,8 +23,7 @@ function js_global(routeName)
     this.start = function()
     {
         this.foo();
-    }
-
+    };
 
     /**
      * @desc Basic function demo
@@ -35,5 +33,4 @@ function js_global(routeName)
     {
         console.log("01 - Hello world, GLOCAL application logic loaded!");
     };
-
 }

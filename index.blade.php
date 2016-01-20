@@ -67,7 +67,7 @@
 
 </head>
 <body id="top">
-<div class="wrapper gut-side">
+<div class="wrapper gut">
 
     <header>
         <div class="row">

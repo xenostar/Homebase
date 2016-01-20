@@ -15,7 +15,6 @@ function appStart()
      */
     var routeName = $('html').attr('class').split(' ')[0];
 
-
     /**
      * Load Global Site Logic
      *
@@ -48,7 +47,6 @@ function appStart()
         console.log("A local error was thrown: " + error);
     }
 }
-
 
 
 

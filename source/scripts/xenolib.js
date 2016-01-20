@@ -73,23 +73,23 @@ function browserInfo()
     this.winHeight = function()
     {
         return $(window).height();
-    }
+    };
     this.winWidth = function()
     {
         return $(window).width();
-    }
+    };
     this.docHeight = function()
     {
         return $(document).height();
-    }
+    };
     this.bodHeight = function()
     {
         return $('body').height();
-    }
+    };
     this.aspectRatio = function()
     {
         return ($(window).width() / $(window).height());
-    }
+    };
 }
 
 
