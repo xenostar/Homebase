@@ -42,8 +42,8 @@
 
     <!-- HTML5shiv, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-        <script src="/assets/libs/html5shiv/dist/html5shiv-printshiv.min.js"></script>
-        <script src="/assets/libs/REM-unit-polyfill/js/rem.min.js"></script>
+        <script src="/wp-content/themes/theme_name/assets/libs/html5shiv/dist/html5shiv-printshiv.min.js"></script>
+        <script src="/wp-content/themes/theme_name/assets/libs/REM-unit-polyfill/js/rem.min.js"></script>
     <![endif]-->
 
     <!-- Header Scripts -->

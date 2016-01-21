@@ -3,14 +3,15 @@
 | Define how the App should start up
 |--------------------------------------------------------------------------
 |
-| The function that loads global and local site logic for the app.
+| The function that loads global and local JS logic for the app.
 |
 */
 function appStart()
 {
     /**
-     * The Laravel page route name is echo'd into the
-     * HTML tag as the first class.
+     * Your CMS page/route name should be echo'd into the
+     * HTML tag as the first class on each page so the app
+     * can load the correct page-specific logic.
      *
      */
     var routeName = $('html').attr('class').split(' ')[0];
@@ -18,9 +19,10 @@ function appStart()
     /**
      * Load Global Site Logic
      *
-     * We pass the routeName paramater so we can do things
-     * on a per-route basis without having to grab
-     * the routeName again from the DOM.
+     * We pass the routeName parameter so we can do things
+     * on a per-route basis.
+     *
+     * This function is loaded from /pages/global.js.
      *
      */
     try {
@@ -28,7 +30,7 @@ function appStart()
         site.start();
     }
     catch(error) {
-        console.log("A global error was thrown: " + error);
+        console.log("Global application logic failed to load: " + error);
     }
 
     /**
@@ -38,13 +40,15 @@ function appStart()
      * routeName we obtained earlier. We prefix the routeName with 'js_'
      * so as to not call any malicious function names.
      *
+     * These functions are loaded from /pages/foo.js.
+     *
      */
     try {
         var page = new window['js_' + routeName]();
         page.start();
     }
     catch(error) {
-        console.log("A local error was thrown: " + error);
+        console.log("Local application logic failed to load: " + error);
     }
 }
 

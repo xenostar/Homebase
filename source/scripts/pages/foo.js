@@ -1,15 +1,13 @@
 /*
 |--------------------------------------------------------------------------
-| Global Site Logic
+| Foo Page Logic i.e. website.com/foo
 |--------------------------------------------------------------------------
 |
-| The javascript logic that should apply to the default page.
+| The javascript logic that should apply to the Foo Page.
 |
 */
 function js_rename()
 {
-    var header  = $('header');
-    var nav     = $('nav');
     var bInfo   = new browserInfo();
 
     /**

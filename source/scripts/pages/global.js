@@ -1,19 +1,17 @@
 /*
 |--------------------------------------------------------------------------
-| Global Site Logic
+| Global Site Logic i.e. website.com/*
 |--------------------------------------------------------------------------
 |
 | The javascript logic that should apply to every page on the website.
-| However, there may be some exceptions, so we pass the route name
-| from Laravel to allow us to check for specific pages.
+| However, there may be some exceptions, so we pass the page/route name
+| from your CMS to allow us to check for specific pages.
 |
-| @param  route name passed from Laravel
+| @param  route name passed from your CMS from ../app.js
 |
 */
 function js_global(routeName)
 {
-    var header  = $('header');
-    var nav     = $('nav');
     var bInfo   = new browserInfo();
 
     /**

@@ -92,5 +92,4 @@ module.exports = function(grunt){
     grunt.registerTask('buildhtml', ['htmlhint']);
     grunt.registerTask('buildjs',   ['concat', 'uglify']);
     grunt.registerTask('buildcss',  ['sass', 'cssc', 'cssmin']);
-
 };
