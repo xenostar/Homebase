@@ -31,13 +31,13 @@ module.exports = function(grunt){
         concat: {
             dist: {
                 src: ['source/scripts/frameworks.js', 'source/scripts/xenolib.js', 'source/scripts/app.js', 'source/scripts/pages/*.js'],
-                dest: 'assets/scripts/app.min.js',
+                dest: 'public_html/assets//scripts/app.min.js',
             }
         },
         uglify: {
             build: {
                 files: {
-                    'assets/scripts/app.min.js': ['assets/scripts/app.min.js']
+                    'public_html/assets//scripts/app.min.js': ['public_html/assets//scripts/app.min.js']
                 }
             }
         },
@@ -47,7 +47,7 @@ module.exports = function(grunt){
         sass: {
             dist: {
                 files: {
-                    'assets/css/master.min.css': 'source/css/master.scss'
+                    'public_html/assets//css/master.min.css': 'source/css/master.scss'
                 }
             }
         },
@@ -59,14 +59,14 @@ module.exports = function(grunt){
                     consolidateMediaQueries:    true
                 },
                 files: {
-                    'assets/css/master.min.css': 'assets/css/master.min.css'
+                    'public_html/assets//css/master.min.css': 'public_html/assets//css/master.min.css'
                 }
             }
         },
         cssmin: {
             build: {
-                src: 'assets/css/master.min.css',
-                dest: 'assets/css/master.min.css'
+                src: 'public_html/assets//css/master.min.css',
+                dest: 'public_html/assets//css/master.min.css'
             }
         },
 

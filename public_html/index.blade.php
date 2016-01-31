@@ -1,49 +1,51 @@
 <!doctype html>
-<!--[if IE 6]>      <html class="ie6"> <![endif]-->
-<!--[if IE 7]>      <html class="ie7"> <![endif]-->
-<!--[if IE 8]>      <html class="ie8"> <![endif]-->
-<!--[if IE 9]><!--> <html class="ie9"> <!--<![endif]-->
+<!--[if IE 6]>      <html class="{{{ $route or Route::currentRouteName() }}} ie6"> <![endif]-->
+<!--[if IE 7]>      <html class="{{{ $route or Route::currentRouteName() }}} ie7"> <![endif]-->
+<!--[if IE 8]>      <html class="{{{ $route or Route::currentRouteName() }}} ie8"> <![endif]-->
+<!--[if IE 9]><!--> <html class="{{{ $route or Route::currentRouteName() }}} ie9"> <!--<![endif]-->
 <head>
 
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Site Name | Page Title</title>
+    <title>Website Name | @yield('title')</title>
 
-    <meta name="description" content="Site Description" />
+    <meta name="description" content="@yield('description')" />
     <meta name="author" content="Xenostar Studios" />
-    <meta name="keywords" content="key, words, here" />
+    <meta name="keywords" content="@yield('keywords')" />
     <meta name="rating" content="general" />
     <meta name="robots" content="noindex, nofollow" />
     <meta name="content-language" content="english">
     <meta name="audience" content="all" />
+@if(Route::currentRouteName() === "home")
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://website.com/" />
-    <meta property="og:image" content="http://website.com/assets/img/xeno-og.png" />
-    <meta property="og:title" content="Website Name" />
-    <meta property="og:description" content="Website description here." />
-    <meta property="og:street-address" content="Company Address" />
-    <meta property="og:locality" content="Company City Here" />
-    <meta property="og:region" content="State" />
-    <meta property="og:postal-code" content="55555" />
+    <meta property="og:url" content="http://xenostar.net/" />
+    <meta property="og:image" content="http://xenostar/assets/img/xeno-og.png" />
+    <meta property="og:title" content="Xenostar Studios" />
+    <meta property="og:description" content="Xenostar Studios offers professional web development and design at affordable prices." />
+    <meta property="og:street-address" content="434 Main Street" />
+    <meta property="og:locality" content="Lafayette" />
+    <meta property="og:region" content="IN" />
+    <meta property="og:postal-code" content="47901" />
     <meta property="og:country-name" content="USA" />
-    <meta property="og:email" content="client@email.com" />
-    <meta property="og:phone_number" content="555-555-5555" />
+    <meta property="og:email" content="inquiry@xenostar.net" />
+    <meta property="og:phone_number" content="765-426-8089" />
+@endif
 
     <!-- Disables Scaling on multi-touch interfaces -->
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
 
     <!-- Apple Touch Icon -->
-    <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 
     <!-- CSS -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/assets/css/master.min.css" />
+    <link rel="stylesheet" href="{{ elixir("css/master.css") }}" />
 
     <!-- HTML5shiv, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-        <script src="/wp-content/themes/theme_name/assets/libs/html5shiv/dist/html5shiv-printshiv.min.js"></script>
-        <script src="/wp-content/themes/theme_name/assets/libs/REM-unit-polyfill/js/rem.min.js"></script>
+        <script src="/libs/html5shiv/dist/html5shiv-printshiv.min.js"></script>
+        <script src="/libs/REM-unit-polyfill/js/rem.min.js"></script>
     <![endif]-->
 
     <!-- Header Scripts -->
@@ -111,9 +113,11 @@
 
 <!-- Load Frameworks -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/libs/jquery/dist/jquery.min.js"><\/script>')</script>
+@yield('scripts')
 
 <!-- Start Application -->
-<script type="text/javascript" src="/assets/scripts/app.min.js"></script>
+<script type="text/javascript" src="{{ elixir("js/app.js") }}"></script>
 
 </body>
 </html>
