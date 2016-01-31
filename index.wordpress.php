@@ -65,7 +65,7 @@
 
 </head>
 <body id="top">
-<div class="wrapper gut">
+<section class="wrapper gut">
 
     <header>
         <div class="row">
@@ -79,62 +79,18 @@
     <nav>
         <div class="row">
 
-            <div class="col_01"><div class="pad">Navi</div></div>
-            <div class="col_01"><div class="pad">Navi</div></div>
-            <div class="col_01"><div class="pad">Navi</div></div>
-            <div class="col_01"><div class="pad">Navi</div></div>
-            <div class="col_01"><div class="pad">Navi</div></div>
-            <div class="col_01"><div class="pad">Navi</div></div>
+            <div class="col_02"><div class="pad">Navi</div></div>
+            <div class="col_02"><div class="pad">Navi</div></div>
+            <div class="col_02"><div class="pad">Navi</div></div>
 
         </div>
     </nav>
-    <section class="content">
+    <section class="main">
         <div class="row">
 
-            <div class="col_02"><div class="pad">07</div></div>
-            <div class="col_04"><div class="pad">08</div></div>
-
-        </div>
-        <div class="row">
-
-            <div class="col_02"><div class="pad">09</div></div>
-            <div class="col_02"><div class="pad">10</div></div>
-            <div class="col_02"><div class="pad">11</div></div>
-
-        </div>
-        <div class="row">
-
-            <div class="col_03"><div class="pad">13</div></div>
-            <div class="col_03"><div class="pad">14</div></div>
-
-        </div>
-        <div class="row">
-
-            <div class="col_06"><div class="pad">15</div></div>
-
-        </div>
-        <div class="row">
-
-            <div class="col_02"><div class="pad">16</div></div>
-            <div class="col_04"><div class="pad">17</div></div>
-
-        </div>
-        <div class="row">
-
-            <div class="col_02"><div class="pad">18</div></div>
-            <div class="col_02"><div class="pad">19</div></div>
-            <div class="col_02"><div class="pad">20</div></div>
-
-        </div>
-        <div class="row">
-
-            <div class="col_03"><div class="pad">21</div></div>
-            <div class="col_03"><div class="pad">22</div></div>
-
-        </div>
-        <div class="row">
-
-            <div class="col_06"><div class="pad">23</div></div>
+            <div class="col_06">
+                <div class="content">07</div>
+            </div>
 
         </div>
     </section>
@@ -146,7 +102,7 @@
         </div>
     </footer>
 
-</div><!-- /wrapper -->
+</section><!-- /wrapper -->
 
 <!-- Footer Scripts -->
 <script>

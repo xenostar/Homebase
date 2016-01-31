@@ -6,9 +6,6 @@ LAYOUT SETUP
 /* Base Styles - Opinionated Defaults
 -----------------------------------------------
 //////////////////////////////////////////////// */
-body                                              { background-color:$site-bg-color; }
-                                                    /* Default body styling */
-
 ::selection                                       { background-color:$def-font-highlight; text-shadow:none; }
                                                     /* Custom background color for highlighted text, also removes text-shadow */
 
@@ -148,10 +145,8 @@ option                                            { padding:0; margin:0; }
 LAYOUT STYLES
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 ------------------------------------------------------------------------------------------------- */
-/* Image Sprites
------------------------------------------------
-//////////////////////////////////////////////// */
-.img_logo                                         { background-image:url('../img/sprite_sheet.png'); background-position:0 0; height:16px; width:86px; }
+html                                              { overflow:hidden; }
+body                                              { background-color:$site-bg-color; overflow:hidden; position:relative; }
 
 
 /* Layout Section - <section class="wrapper">
@@ -183,6 +178,12 @@ section.main                                      { }
 -----------------------------------------------
 //////////////////////////////////////////////// */
 footer                                            { }
+
+
+/* Image Sprites
+-----------------------------------------------
+//////////////////////////////////////////////// */
+.img_logo                                         { background-image:url('../img/sprite_sheet.png'); background-position:0 0; height:16px; width:86px; }
 
 
 
