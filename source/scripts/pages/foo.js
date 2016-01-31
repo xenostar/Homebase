@@ -6,7 +6,7 @@
 | The javascript logic that should apply to the Foo Page.
 |
 */
-function js_rename()
+function js_foo()
 {
     var bInfo   = new browserInfo();
 
