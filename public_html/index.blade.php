@@ -20,7 +20,7 @@
 @if(Route::currentRouteName() === "home")
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://xenostar.net/" />
-    <meta property="og:image" content="http://xenostar/assets/img/xeno-og.png" />
+    <meta property="og:image" content="http://xenostar/assets/img/og.png" />
     <meta property="og:title" content="Xenostar Studios" />
     <meta property="og:description" content="Xenostar Studios offers professional web development and design at affordable prices." />
     <meta property="og:street-address" content="434 Main Street" />
@@ -117,7 +117,7 @@
 @yield('scripts')
 
 <!-- Start Application -->
-<script type="text/javascript" src="{{ elixir("js/app.js") }}"></script>
+<script src="{{ elixir("js/app.js") }}"></script>
 
 </body>
 </html>

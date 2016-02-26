@@ -62,9 +62,11 @@ span.amp                                          { font-family:Baskerville,"Pal
 
 /*
 .wf-loading                                       { }
+.wf-inactive .title,
 .wf-active                                        { opacity:1 !important; } */
 
 .wf-loading .title                                { opacity:0; }
+.wf-inactive .title,
 .wf-active .title                                 { @include animation(fadeIn, 1.0s, 1.0s); }
                                                     /* Handles Typekit Loading Events */
 
@@ -91,12 +93,12 @@ a:active                                          { }
 a:visited                                         { }
                                                     /* Default anchor font-styling */
 
-h1                                                { font-size:em($def-h1-size); font-family:$def-font-family; font-style:$def-header-style; font-weight:$def-header-weight; line-height:1; }
-h2                                                { font-size:em($def-h2-size); font-family:$def-font-family; font-style:$def-header-style; font-weight:$def-header-weight; line-height:1; }
-h3                                                { font-size:em($def-h3-size); font-family:$def-font-family; font-style:$def-header-style; font-weight:$def-header-weight; line-height:1; }
-h4                                                { font-size:em($def-h4-size); font-family:$def-font-family; font-style:$def-header-style; font-weight:$def-header-weight; line-height:1; }
-h5                                                { font-size:em($def-h5-size); font-family:$def-font-family; font-style:$def-header-style; font-weight:$def-header-weight; line-height:1; }
-h6                                                { font-size:em($def-h6-size); font-family:$def-font-family; font-style:$def-header-style; font-weight:$def-header-weight; line-height:1; }
+h1                                                { color:$def-header-color; font-size:em($def-h1-size); font-family:$def-font-family; font-style:$def-header-style; font-weight:$def-header-weight; line-height:1; }
+h2                                                { color:$def-header-color; font-size:em($def-h2-size); font-family:$def-font-family; font-style:$def-header-style; font-weight:$def-header-weight; line-height:1; }
+h3                                                { color:$def-header-color; font-size:em($def-h3-size); font-family:$def-font-family; font-style:$def-header-style; font-weight:$def-header-weight; line-height:1; }
+h4                                                { color:$def-header-color; font-size:em($def-h4-size); font-family:$def-font-family; font-style:$def-header-style; font-weight:$def-header-weight; line-height:1; }
+h5                                                { color:$def-header-color; font-size:em($def-h5-size); font-family:$def-font-family; font-style:$def-header-style; font-weight:$def-header-weight; line-height:1; }
+h6                                                { color:$def-header-color; font-size:em($def-h6-size); font-family:$def-font-family; font-style:$def-header-style; font-weight:$def-header-weight; line-height:1; }
                                                     /* Default header font-styling */
 
 

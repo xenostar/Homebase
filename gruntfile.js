@@ -7,6 +7,11 @@ module.exports = function(grunt){
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
+        dirs: {
+            source: 'source',
+            output: 'public_html/assets'
+            // output: 'public_html/wp-content/themes/xenotheme/assets'
+        },
 
         // HTML Validation
         htmlhint: {
@@ -26,28 +31,26 @@ module.exports = function(grunt){
             }
         },
 
-
         // JS Concat -> Minify
         concat: {
             dist: {
-                src: ['source/scripts/frameworks.js', 'source/scripts/xenolib.js', 'source/scripts/app.js', 'source/scripts/pages/*.js'],
-                dest: 'public_html/assets//scripts/app.min.js',
+                src: ['<%= dirs.source %>/scripts/frameworks.js', '<%= dirs.source %>/scripts/xenolib.js', '<%= dirs.source %>/scripts/app.js', '<%= dirs.source %>/scripts/pages/*.js'],
+                dest: '<%= dirs.output %>/scripts/app.min.js',
             }
         },
         uglify: {
             build: {
                 files: {
-                    'public_html/assets//scripts/app.min.js': ['public_html/assets//scripts/app.min.js']
+                    '<%= dirs.output %>/scripts/app.min.js': ['<%= dirs.output %>/scripts/app.min.js']
                 }
             }
         },
-
 
         // SASS Compile -> Compress -> Minify
         sass: {
             dist: {
                 files: {
-                    'public_html/assets//css/master.min.css': 'source/css/master.scss'
+                    '<%= dirs.output %>/css/master.min.css': '<%= dirs.source %>/css/master.scss'
                 }
             }
         },
@@ -59,17 +62,16 @@ module.exports = function(grunt){
                     consolidateMediaQueries:    true
                 },
                 files: {
-                    'public_html/assets//css/master.min.css': 'public_html/assets//css/master.min.css'
+                    '<%= dirs.output %>/css/master.min.css': '<%= dirs.output %>/css/master.min.css'
                 }
             }
         },
         cssmin: {
             build: {
-                src: 'public_html/assets//css/master.min.css',
-                dest: 'public_html/assets//css/master.min.css'
+                src: '<%= dirs.output %>/css/master.min.css',
+                dest: '<%= dirs.output %>/css/master.min.css'
             }
         },
-
 
         // Watch Tasks
         watch: {
@@ -78,11 +80,11 @@ module.exports = function(grunt){
                 tasks: ['buildhtml']
             },
             js: {
-                files: ['source/scripts/**/*.js'],
+                files: ['<%= dirs.source %>/scripts/**/*.js'],
                 tasks: ['buildjs']
             },
             css: {
-                files: ['source/css/**/*.scss'],
+                files: ['<%= dirs.source %>/css/**/*.scss'],
                 tasks: ['buildcss']
             }
         }
