@@ -123,9 +123,12 @@ form > div:last-child > span                      { margin-bottom:0; }
 label                                             { font-size:em($def-font-size); padding-bottom:rem($def-margin / 2); }
 
 input                                             { background:transparent; border:$def-border-size solid $def-border-color; border-radius:$def-border-radius; font-size:em($def-font-size); padding:rem(9px) rem(0px) rem(11px) rem(14px); transition:0.3s all ease; }
+input:focus                                       { background:rgba(0,0,0,0.05); }
+
 input[type="button"]                              { padding:rem(9px) rem(14px) rem(11px) rem(14px); }
 input[type="button"]:hover                        { background:rgba(0,0,0,0.05); }
-input:focus                                       { background:rgba(0,0,0,0.05); }
+input[type="submit"]                              { padding:rem(9px) rem(14px) rem(11px) rem(14px); }
+input[type="submit"]:hover                        { background:rgba(0,0,0,0.05); }
 
 textarea                                          { background:transparent; border:$def-border-size solid $def-border-color; border-radius:$def-border-radius; font-size:em($def-font-size); padding:rem(9px) rem(15px) rem(11px) rem(14px); min-height:rem(150px); transition:0.3s background ease; }
 textarea:focus                                    { background:rgba(0,0,0,0.05); }
