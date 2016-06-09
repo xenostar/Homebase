@@ -8,11 +8,14 @@ MEDIA QUERY SETUP
 //////////////////////////////////////////////// */
 @media (max-width:em(480px))                      {
 
+    .full                                         { display:none; }
+    .mobi                                         { display:block; }
+
     html {
         font-size:1em;
     }
 
-    section.content [class^="col_"] {
+    section.main [class^="col_"] {
         width:100%; margin:0;
     }
 
@@ -26,13 +29,15 @@ MEDIA QUERY SETUP
 //////////////////////////////////////////////// */
 @media (min-width:em(480px)) and (max-width:em(768px)){
 
+    .full                                         { display:none; }
+    .mobi                                         { display:block; }
+
     html {
         font-size:1em;
     }
 
-    section.content [class^="col_"] {
-        width:100%;
-        margin:0;
+    section.main [class^="col_"] {
+        width:100%; margin:0;
     }
 
     footer [class^="col_"] {
@@ -45,6 +50,9 @@ MEDIA QUERY SETUP
 //////////////////////////////////////////////// */
 @media (min-width:em(768px)) and (max-width:em(979px)){
 
+    .full                                         { display:block; }
+    .mobi                                         { display:none; }
+
     html {
         font-size:1em;
     }
@@ -54,6 +62,9 @@ MEDIA QUERY SETUP
 -----------------------------------------------
 //////////////////////////////////////////////// */
 @media (min-width:em(980px))                      {
+
+    .full                                         { display:block; }
+    .mobi                                         { display:none; }
 
     html {
         font-size:1em;

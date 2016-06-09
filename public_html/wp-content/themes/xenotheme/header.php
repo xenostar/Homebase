@@ -36,16 +36,17 @@
 
     <!-- Wordpress Header START -->
 <?php wp_head(); ?>
+
     <!-- Wordpress Header END -->
 
     <!-- Disables Scaling on multi-touch interfaces -->
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
 
     <!-- Apple Touch Icon -->
-    <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" href="/wp-content/themes/xenotheme/assets/img/apple-touch-icon.png">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/wp-content/themes/xenotheme/assets/libs/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="/wp-content/themes/xenotheme/assets/css/master.min.css" />
 
     <!-- HTML5shiv, for IE6-8 support of HTML5 elements -->
@@ -64,7 +65,7 @@
         ];
         (function(d) {
         var config = {
-          kitId: 'hef8jon',
+          kitId: '',
           scriptTimeout: 3000,
           async: true
         },
@@ -74,6 +75,7 @@
 
 </head>
 <body id="top">
+
 <div class="mobile-btn">
     <div></div>
     <div></div>
@@ -88,10 +90,9 @@
     <a href="/contact"<?php if($slug == "contact"){ ?> class="active"<?php } ?>>Contact</a>
 </div>
 <div class="mobile-overlay"></div>
+
 <div class="wrapper">
 
-    <section class="top_banner">
-    </section>
     <nav class="mobi">
         <div class="row">
             <div class="col_06">

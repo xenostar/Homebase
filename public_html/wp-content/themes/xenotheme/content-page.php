@@ -1,5 +1,5 @@
     <header>
-        <div class="row single">
+        <div class="row">
             <div class="col_06">
                 <h1>Header/Slider</h1>
             </div>

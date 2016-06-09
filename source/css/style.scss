@@ -45,6 +45,7 @@ span.amp                                          { font-family:Baskerville,"Pal
                                                     /* Reference: http://simplebits.com/notebook/2008/08/14/ampersands-2/ */
 
 
+
 /* Global Class Helpers
  * Might below to plugins/frameworks i.e. Typekit
 -----------------------------------------------
@@ -104,7 +105,6 @@ h6                                                { color:$def-header-color; fon
 
 
 
-
 /* -------------------------------------------------------------------------------------------------
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 FORM DEFAULTS
@@ -141,7 +141,6 @@ option                                            { padding:0; margin:0; }
 
 
 
-
 /* -------------------------------------------------------------------------------------------------
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 LAYOUT STYLES
@@ -151,24 +150,25 @@ html                                              { overflow:hidden; }
 body                                              { background-color:$site-bg-color; overflow:hidden; position:relative; }
 
 
-/* Layout Section - <section class="wrapper">
+/* Layout Section - section.wrapper
 -----------------------------------------------
 //////////////////////////////////////////////// */
 .wrapper                                          { }
 
 
-/* Layout Section - <header>
+/* Layout Section - header
 -----------------------------------------------
 //////////////////////////////////////////////// */
 header                                            { }
 
-/* Layout Section - <nav>
+
+/* Layout Section - nav
 -----------------------------------------------
 //////////////////////////////////////////////// */
 nav                                               { }
 
 
-/* Layout Section - <section class="main">
+/* Layout Section - section.main
 -----------------------------------------------
 //////////////////////////////////////////////// */
 section.main                                      { }
@@ -176,7 +176,7 @@ section.main                                      { }
 .content                                          { }
 
 
-/* Layout Section - <footer>
+/* Layout Section - footer
 -----------------------------------------------
 //////////////////////////////////////////////// */
 footer                                            { }
@@ -185,7 +185,7 @@ footer                                            { }
 /* Image Sprites
 -----------------------------------------------
 //////////////////////////////////////////////// */
-.img_logo                                         { background-image:url('../img/sprite_sheet.png'); background-position:0 0; height:16px; width:86px; }
+.img_sprites                                      { background-image:url('../img/sprite_sheet.png'); background-position:0 0; height:16px; width:16px; }
 
 
 

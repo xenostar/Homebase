@@ -1,18 +1,21 @@
-    <section class="banner mini">
+    <header>
         <div class="row">
             <div class="col_06">
-                <h2><?php the_title('',''); ?></h2>
+                <h1>Header/Slider</h1>
             </div>
         </div>
-    </section>
-    <section class="content">
+    </header>
+    <section class="main">
         <div class="row">
 
             <div class="col_04">
-                <?php the_post(); ?>
-                <?php the_content(); ?>
-                <p class="postby">Posted on <?php the_time('F jS, Y') ?> by <?php the_author_posts_link() ?>.</p>
-                <p class="postmetadata">Posted in: <?php the_category(', '); ?></p>
+                <h2 class="title"><?php the_title('',''); ?></h2>
+                <div class="content">
+                    <?php the_post(); ?>
+                    <?php the_content(); ?>
+                    <p class="postby">Posted on <?php the_time('F jS, Y') ?> by <?php the_author_posts_link() ?>.</p>
+                    <p class="postmetadata">Posted in: <?php the_category(', '); ?></p>
+                </div>
             </div>
             <div class="col_02">
 <?php get_sidebar(); ?>

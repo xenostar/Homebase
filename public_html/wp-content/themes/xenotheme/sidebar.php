@@ -3,7 +3,7 @@
     $slug = get_post( $post )->post_name;
 ?>
                 <h2 class="title-sidebar">
-                    <p>Sidebar Title area</p>
+                    Sidebar
 <?php
 // the_block( 'Sidebar Title', array(
 // 'type'          => 'one-liner',

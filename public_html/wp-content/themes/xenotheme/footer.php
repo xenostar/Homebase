@@ -16,13 +16,13 @@
 </div><!-- /wrapper -->
 
 <!-- Load Frameworks -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="/wp-content/themes/xenotheme/assets/libs/jquery/dist/jquery.min.js"></script>
 
 <!-- Wordpress Footer -->
 <?php wp_footer(); ?>
 
 <!-- Start Application -->
-<script type="text/javascript" src="/wp-content/themes/xenotheme/assets/scripts/app.min.js"></script>
+<script src="/wp-content/themes/xenotheme/assets/scripts/app.min.js"></script>
 
 </body>
 </html>

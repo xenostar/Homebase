@@ -23,7 +23,7 @@ footer                                            { display:block; position:rela
                                                   /* The .row defines a horizontal space in a section in which columns are inserted.
                                                      !!! There must be at least one .row per .section */
 
-.row.full                                         { max-width:none; }
+.row.fs                                           { max-width:none; }
 
 [class^="col_"]                                   { @extend %clearfix; box-sizing:border-box; float:left; position:relative; vertical-align:top; }
 

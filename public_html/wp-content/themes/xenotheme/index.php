@@ -4,9 +4,13 @@
 Template - index.php
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 ------------------------------------------------------------------------------------------------- */
+// Header
+get_header();
+
+// Content
 if(have_posts())
 {
-    get_header();
+
     if(is_front_page())
     {
         get_template_part('content-front');
@@ -26,9 +30,11 @@ if(have_posts())
             get_template_part('content-single');
         }
     }
-    get_footer();
 }
 else
 {
     get_template_part('content-404');
 }
+
+// Footer
+get_footer();
