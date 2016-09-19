@@ -11,7 +11,6 @@ $slug = get_post( $post )->post_name;
 			</div>
 		</div>
 	</footer>
-
 </div><!-- /wrapper -->
 
 <!-- Load Frameworks -->
