@@ -61,7 +61,7 @@ function appStart() {
 | We call the appStart() function on document ready.
 |
 */
-$(document).on('ready', function() {
+$(function() {
 	appStart();
 });
 
