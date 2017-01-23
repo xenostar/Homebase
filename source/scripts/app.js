@@ -61,7 +61,7 @@ function appStart() {
 | We call the appStart() function on document ready.
 |
 */
-$(document).ready(function() {
+$(document).on('ready', function() {
 	appStart();
 });
 
@@ -78,7 +78,7 @@ $(document).ready(function() {
 | fully loaded every asset needed: DOM & Images, CSS & JS.
 |
 */
-$(window).load(function() {
+$(window).on('load', function() {
 	/**
 	 * Start caching images for next page.
 	 *

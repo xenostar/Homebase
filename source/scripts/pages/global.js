@@ -53,7 +53,7 @@ function js_global(routeName) {
 			resetMenu();
 		});
 
-		$(window).resize(function() {
+		$(window).on('resize', function() {
 			resetMenu();
 		});
 
