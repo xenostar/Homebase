@@ -14,22 +14,25 @@
 
 	<title><?php bloginfo('name'); ?><?php if (wp_title('', false)) { echo ' | '; } ?><?php echo trim(wp_title('', false)); ?></title>
 
-	<meta name="description" content="Sophtech Worldwide is Supplying the World's Solutions." />
-	<meta name="author" content="Sophtech" />
-	<meta name="keywords" content="Filters, Hydraulics, Electronics" />
+	<meta name="description" content="Site Description" />
+	<meta name="author" content="Xenostar Studios" />
+	<meta name="keywords" content="key, words, here" />
 	<meta name="rating" content="general" />
-	<meta name="robots" content="noindex, nofollow" />
+	<meta name="robots" content="index, follow" />
 	<meta name="content-language" content="english">
 	<meta name="audience" content="all" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="http://www.sophtech.net/" />
-	<meta property="og:image" content="http://www.sophtech.net/wp-content/themes/xenotheme/assets/img/og.png" />
-	<meta property="og:title" content="Sophtech" />
-	<meta property="og:region" content="Indiana" />
-	<meta property="og:postal-code" content="47901" />
-	<meta property="og:country-name" content="United States" />
-	<meta property="og:email" content="mimi@sophtech.net" />
-	<meta property="og:phone_number" content="317-776-5680" />
+	<meta property="og:url" content="http://website.com/" />
+	<meta property="og:image" content="http://website.com/wp-content/themes/xenotheme_v2/assets/img/og.png" />
+	<meta property="og:title" content="Website Name" />
+	<meta property="og:description" content="Business description" />
+	<meta property="og:street-address" content="Business Location" />
+	<meta property="og:locality" content="Location" />
+	<meta property="og:region" content="State" />
+	<meta property="og:postal-code" content="Zip" />
+	<meta property="og:country-name" content="Country" />
+	<meta property="og:email" content="email@website.com" />
+	<meta property="og:phone_number" content="555-555-5555" />
 
 	<!-- Wordpress Header START -->
 <?php wp_head(); ?>
@@ -40,16 +43,16 @@
 	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
 
 	<!-- Apple Touch Icon -->
-	<link rel="apple-touch-icon" href="/wp-content/themes/xenotheme/assets/img/apple-touch-icon.png">
+	<link rel="apple-touch-icon" href="/wp-content/themes/xenotheme_v2/assets/img/apple-touch-icon.png">
 
 	<!-- CSS -->
-	<link rel="stylesheet" href="/wp-content/themes/xenotheme/assets/libs/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="/wp-content/themes/xenotheme/assets/css/master.min.css" />
+	<link rel="stylesheet" href="/wp-content/themes/xenotheme_v2/assets/libs/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/wp-content/themes/xenotheme_v2/assets/css/master.min.css" />
 
 	<!-- HTML5shiv, for IE6-8 support of HTML5 elements -->
 	<!--[if lt IE 9]>
-		<script src="/wp-content/themes/xenotheme/assets/libs/html5shiv/dist/html5shiv-printshiv.min.js"></script>
-		<script src="/wp-content/themes/xenotheme/assets/libs/REM-unit-polyfill/js/rem.min.js"></script>
+		<script src="/wp-content/themes/xenotheme_v2/assets/libs/html5shiv/dist/html5shiv-printshiv.min.js"></script>
+		<script src="/wp-content/themes/xenotheme_v2/assets/libs/REM-unit-polyfill/js/rem.min.js"></script>
 	<![endif]-->
 
 	<!-- Header Scripts -->
