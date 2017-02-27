@@ -11,7 +11,6 @@ module.exports = function(grunt) {
 			source: 'source',
 			output: 'public_html/assets'
 			// output: 'public_html/wp-content/themes/xenotheme/assets'
-			// output: 'public_html/wp-content/themes/xenotheme_v2/assets'
 		},
 
 		// HTML Validation
