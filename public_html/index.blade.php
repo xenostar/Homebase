@@ -1,35 +1,25 @@
-<!doctype html>
-<!--[if IE 6]>      <html class="{{{ $route or Route::currentRouteName() }}} ie6"> <![endif]-->
-<!--[if IE 7]>      <html class="{{{ $route or Route::currentRouteName() }}} ie7"> <![endif]-->
-<!--[if IE 8]>      <html class="{{{ $route or Route::currentRouteName() }}} ie8"> <![endif]-->
-<!--[if IE 9]><!--> <html class="{{{ $route or Route::currentRouteName() }}} ie9"> <!--<![endif]-->
+<!DOCTYPE html>
+<html class="{{{ $route or Route::currentRouteName() }}}">
 <head>
 
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Website Name | @yield('title')</title>
+		<title>Website Name | @yield('title')</title>
 
-    <meta name="description" content="@yield('description')" />
-    <meta name="author" content="Xenostar Studios" />
-    <meta name="keywords" content="@yield('keywords')" />
-    <meta name="rating" content="general" />
-    <meta name="robots" content="index, follow" />
-    <meta name="content-language" content="english">
-    <meta name="audience" content="all" />
+		<meta name="description" content="Website description." />
+		<meta name="author" content="Xenostar Studios" />
+		<meta name="rating" content="general" />
+		<meta name="robots" content="index, follow" />
+		<meta name="content-language" content="english">
+		<meta name="audience" content="all" />
 @if(Route::currentRouteName() === "home")
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://xenostar.net/" />
-    <meta property="og:image" content="http://xenostar/assets/img/og.png" />
-    <meta property="og:title" content="Xenostar Studios" />
-    <meta property="og:description" content="Xenostar Studios offers professional web development and design at affordable prices." />
-    <meta property="og:street-address" content="434 Main Street" />
-    <meta property="og:locality" content="Lafayette" />
-    <meta property="og:region" content="IN" />
-    <meta property="og:postal-code" content="47901" />
-    <meta property="og:country-name" content="USA" />
-    <meta property="og:email" content="inquiry@xenostar.net" />
-    <meta property="og:phone_number" content="765-426-8089" />
+		<meta property="og:site_name" content="Website Name">
+		<meta property="og:title" content="Website Title">
+		<meta property="og:type" content="website">
+		<meta property="og:description" content="Website Description">
+		<meta property="og:image" content="http://website.com/wp-content/themes/xenotheme_v2/assets/img/logo.png">
+		<meta property="og:url" content="http://website.com/">
 @endif
 
     <!-- Disables Scaling on multi-touch interfaces -->

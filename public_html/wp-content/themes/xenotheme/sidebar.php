@@ -1,22 +1,17 @@
 <?php
     global $post;
     $slug = get_post( $post )->post_name;
+    // the_block( 'Sidebar Title', array(
+    // 'type'          => 'one-liner',
+    // 'apply_filters' => false,
+    // ) );
+
+    // the_block( 'Sidebar Content', array(
+    // 'type'          => 'editor',
+    // 'apply_filters' => true,
+    // ) );
 ?>
-                <h2 class="title-sidebar">
-                    Sidebar
-<?php
-// the_block( 'Sidebar Title', array(
-// 'type'          => 'one-liner',
-// 'apply_filters' => false,
-// ) );
-?>
-                </h2>
-                <div class="sidebar">
-                    <p>Sidebar Content area</p>
-<?php
-// the_block( 'Sidebar Content', array(
-// 'type'          => 'editor',
-// 'apply_filters' => true,
-// ) );
-?>
-                </div>
+				<div class="sidebar">
+						<h2>Sidebar</h2>
+						<p>Sidebar Content</p>
+				</div>
