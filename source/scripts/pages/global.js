@@ -27,7 +27,7 @@ function js_global(routeName) {
 	 *
 	 */
 	this.foo = function() {
-		console.log("01 - Hello world, GLOCAL application logic loaded!");
+		console.log("01 - Hello world, GLOBAL application logic loaded!");
 	};
 
 	/**
