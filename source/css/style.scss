@@ -95,6 +95,8 @@ a                                                { color:$def-anchor-color; text
 a:hover                                          { color:$def-anchor-hover; }
 a:active                                         { }
 a:visited                                        { }
+a .fa                                            { color: $def-anchor-color; }
+a:hover .fa                                      { color: $def-anchor-hover; }
                                                    /* Default anchor font-styling */
 
 h1                                               { color:$def-header-color; font-size:em($def-h1-size); font-family:$def-font-family; font-style:$def-header-style; font-weight:$def-header-weight; line-height:1; }
@@ -157,8 +159,9 @@ option                                           { padding:0; margin:0; }
 LAYOUT STYLES
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 ------------------------------------------------------------------------------------------------- */
-html                                              { overflow-y:scroll; }
-body                                              { background-color:$site-bg-color; position:relative; }
+html                                             { overflow-y:scroll; }
+body                                             { background-color:$site-bg-color; position:relative; }
+.wrapper                                         { }
 
 
 /* Layout Section - Mobile Nav
@@ -184,12 +187,6 @@ body                                              { background-color:$site-bg-co
 .mobile-overlay                                  { @include fixed(0,0,0,0); display:none; z-index:25; }
 
 .blur                                            { @include fixed(0,0,0,0); -webkit-filter: blur(2px); -moz-filter: blur(2px); -o-filter: blur(2px); -ms-filter: blur(2px); filter: blur(2px); }
-
-
-/* Layout Section - section.wrapper
------------------------------------------------
-/////////////////////////////////////////////// */
-.wrapper                                         { }
 
 
 /* Layout Section - header
