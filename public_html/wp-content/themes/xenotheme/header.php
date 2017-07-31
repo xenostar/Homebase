@@ -28,8 +28,6 @@
 	<!-- Wordpress Header START -->
 <?php wp_head(); ?>
 
-	<!-- Wordpress Header END -->
-
 	<!-- Disables Scaling on multi-touch interfaces -->
 	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
 
