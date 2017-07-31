@@ -35,21 +35,21 @@ function js_global(routeName) {
 	 *
 	 */
 	this.mobileNav = function() {
-		var menu = $('.mobile-nav');
-		var menu_btn = $('.mobile-btn');
-		var close_btn = $('.close-btn');
-		var overlay = $('.mobile-overlay');
-		var wrap = $('.wrapper');
+		var wrapper      = $('.wrapper');
+		var mnav         = $('.mobile-nav--body');
+		var mnav_btn     = $('.mobile-nav--btn');
+		var mnav_close   = $('.mobile-nav--close');
+		var mnav_overlay = $('.mobile-nav--overlay');
 
-		menu_btn.on('click', function() {
+		mnav_btn.on('click', function() {
 			activateMenu();
 		});
 
-		overlay.on('click', function() {
+		mnav_overlay.on('click', function() {
 			resetMenu();
 		});
 
-		close_btn.on('click', function() {
+		mnav_close.on('click', function() {
 			resetMenu();
 		});
 
@@ -58,22 +58,22 @@ function js_global(routeName) {
 		});
 
 		function activateMenu() {
-			if (!menu.hasClass('shift')) {
-				overlay.show();
-				menu.addClass('shift');
-				menu_btn.addClass('shift');
-				wrap.addClass('blur');
+			if (!mnav.hasClass('shift')) {
+				mnav_overlay.show();
+				mnav.addClass('shift');
+				mnav_btn.addClass('shift');
+				wrapper.addClass('blur');
 			} else {
 				resetMenu();
 			}
 		}
 
 		function resetMenu() {
-			if (menu.hasClass('shift')) {
-				overlay.hide();
-				menu.removeClass('shift');
-				menu_btn.removeClass('shift');
-				wrap.removeClass('blur');
+			if (mnav.hasClass('shift')) {
+				mnav_overlay.hide();
+				mnav.removeClass('shift');
+				mnav_btn.removeClass('shift');
+				wrapper.removeClass('blur');
 			}
 		}
 	};

@@ -67,19 +67,6 @@
 </head>
 <body id="top" class="xeno">
 
-<div class="mobile-btn">
-	<div></div>
-	<div></div>
-	<div></div>
-</div>
-<div class="mobile-nav">
-	<div class="logo">
-		<h2>Navigation<i class="fa fa-times close-btn"></i></h2>
-	</div>
-	<a href="/"<?php if($slug == "home"){ ?> class="active"<?php } ?>>Home</a>
-	<a href="/about"<?php if($slug == "about"){ ?> class="active"<?php } ?>>About</a>
-	<a href="/contact"<?php if($slug == "contact"){ ?> class="active"<?php } ?>>Contact</a>
-</div>
-<div class="mobile-overlay"></div>
+<?php get_template_part('templates/nav', 'mobile'); ?>
 
 <div class="wrapper gut">
