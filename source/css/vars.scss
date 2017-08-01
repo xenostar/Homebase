@@ -1,14 +1,9 @@
 /* -------------------------------------------------------------------------------------------------
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-GLOBAL SCSS VARIABLES
-
-Use http://www.pearsonified.com/typography/ to find Golden Ratio font size settings.
-
+GLOBAL SCSS VARIABLES - Use http://www.pearsonified.com/typography/ to find Golden Ratio font size settings.
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 ------------------------------------------------------------------------------------------------- */
-/* Site Colors */
-$site-bg-image:      url('');
-$site-bg-color:      #fefffd;
+// Site Colors
 $site-color-1:       #99cce1;
 $site-color-2:       #34bbf3;
 $site-color-3:       #000;
@@ -16,19 +11,30 @@ $white:              #fff;
 $black:              #000;
 
 
-/* Anchor Settings */
+// Background
+$site-bg-image:      url('');
+$site-bg-color:      $site-color-2;
+
+
+// Transitions
+$def-trans-time:     0.4s;
+$def-trans-func:     ease;
+$def-transition:     $def-trans-time all $def-trans-func;
+
+
+// Anchor Settings
 $def-anchor-color:    #000;
 $def-anchor-hover:    #eee;
 $def-anchor-deco:     none;
 
 
-/* Border Settings */
+// Border Settings
 $def-border-color:    #bbb;
 $def-border-radius:   5px;
 $def-border-size:     2px;
 
 
-/* Font Settings */
+// Font Settings
 $def-font-color:      #222;                    // CONFIGURE: Global font-color
 $def-font-highlight:  #b3d4fc;                 // CONFIGURE: Global ::selection color for fonts
 $def-font-family:     Arial, Helvetica, sans-serif; // CONFIGURE: Global font-family
@@ -40,11 +46,11 @@ $def-font-style:      normal;                  // Usually do not touch. Global f
 $def-font-weight:     400;                     // Usually do not touch. Global font-weight
 
 
-/* Headers Settings */
+// Headers Settings
 $def-header-style:    normal;                  // Usually do not touch.
 $def-header-weight:   700;                     // Usually do not touch.
-
 $def-header-color:    #fff;
+
 $def-h1-size:         52px;                    // CONFIGURE: Equivalent to 'Title' on Pearsonified
 $def-h2-size:         32px;                    // CONFIGURE: Equivalent to 'Headlines' on Pearsonified
 $def-h3-size:         25px;                    // CONFIGURE: Equivalent to 'Sub-headlines' on Pearsonified
@@ -53,7 +59,7 @@ $def-h5-size:         16px;                    // CONFIGURE: Equivalent to 'Seco
 $def-h6-size:         13px;                    // CONFIGURE: Equivalent to 'Secondary Text' minus 2-3 pixels. User preference. Usually never used.
 
 
-/* Helper functions. DON'T edit anything down here if you want to live */
+// Helper functions. DON'T edit anything down here if you want to live
 $def-line-height:     strip-units($def-font-lh / $def-font-size);
 $def-margin:          $def-font-lh;
 $def-padding:         $def-font-lh;

@@ -86,7 +86,7 @@ FORM DEFAULTS
 ------------------------------------------------------------------------------------------------- */
 $input-height: rem(50px);
 
-form                                             { background:$white; border-radius:$def-border-radius; padding:rem($def-padding); }
+form                                             { background-color:$white; border-radius:$def-border-radius; padding:rem($def-padding); }
 form > *:last-child                              { margin-bottom: 0; }
 
 form > div                                       { @extend %clearfix; display:block; position:relative; }
@@ -99,19 +99,19 @@ form > div:last-child > span                     { margin-bottom:0; }
 label                                            { font-size:em($def-font-size); padding-bottom:rem($def-margin / 2); }
 
 button,
-input                                            { background:transparent; border:$def-border-size solid $def-border-color; border-radius:$def-border-radius; font-size:em($def-font-size); line-height:$input-height; padding:0 rem(15px); transition:0.3s all ease; }
+input                                            { background-color:transparent; border:$def-border-size solid $def-border-color; border-radius:$def-border-radius; font-size:em($def-font-size); line-height:$input-height; padding:0 rem(15px); transition: $def-transition; }
 
 button:focus,
-input:focus                                      { background:rgba(0,0,0,0.05); }
+input:focus                                      { background-color:rgba(0,0,0,0.05); }
 
 button:hover,
 input[type="button"]:hover,
-input[type="submit"]:hover                       { background:rgba(0,0,0,0.05); }
+input[type="submit"]:hover                       { background-color:rgba(0,0,0,0.05); }
 
-textarea                                         { background:transparent; border:$def-border-size solid $def-border-color; border-radius:$def-border-radius; font-size:em($def-font-size); padding:rem(15px); min-height:rem(100px); transition:0.3s background ease; }
-textarea:focus                                   { background:rgba(0,0,0,0.05); }
+textarea                                         { background-color:transparent; border:$def-border-size solid $def-border-color; border-radius:$def-border-radius; font-size:em($def-font-size); padding:rem(15px); min-height:rem(100px); transition: $def-trans-time background $def-trans-func; }
+textarea:focus                                   { background-color:rgba(0,0,0,0.05); }
 
-select                                           { background:transparent; border:$def-border-size solid $def-border-color; border-radius:$def-border-radius; font-size:em($def-font-size); height:$input-height; padding:0 rem(15px); }
+select                                           { background-color:transparent; border:$def-border-size solid $def-border-color; border-radius:$def-border-radius; font-size:em($def-font-size); height:$input-height; padding:0 rem(15px); }
 select                                           { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
 select ::-ms-expand                              { display:none; }
 option                                           { padding:0; margin:0; }

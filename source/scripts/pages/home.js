@@ -1,10 +1,7 @@
 /*
 |--------------------------------------------------------------------------
-| Foo Page Logic i.e. website.com/foo
+| Local Page Logic: website.com/home
 |--------------------------------------------------------------------------
-|
-| The javascript logic that should apply to the Foo Page.
-|
 */
 function js_home() {
 	var bInfo = new browserInfo();
