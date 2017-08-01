@@ -62,7 +62,7 @@ function js_global(routeName) {
 				mnav_overlay.show();
 				mnav.addClass('shift');
 				mnav_btn.addClass('shift');
-				wrapper.addClass('blur');
+				wrapper.addClass('mobile-nav--blur');
 			} else {
 				resetMenu();
 			}
@@ -73,7 +73,7 @@ function js_global(routeName) {
 				mnav_overlay.hide();
 				mnav.removeClass('shift');
 				mnav_btn.removeClass('shift');
-				wrapper.removeClass('blur');
+				wrapper.removeClass('mobile-nav--blur');
 			}
 		}
 	};

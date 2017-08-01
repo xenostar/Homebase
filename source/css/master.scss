@@ -9,12 +9,14 @@ Website: http://xenostar.net/(homebase)
 Credits: Normalize.css, Twitter Boostrap, HTML5 Boilerplate, NoDivs, Elliot Jay Stocks, Bryan Veloso
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 ------------------------------------------------------------------------------------------------- */
-@import 'functions.scss';     // 01 - SCSS Functions
-@import 'vars.scss';          // 02 - SCSS Variables
-@import 'mixins.scss';        // 03 - SCSS Mixins
-@import 'fonts.scss';         // 03 - Font Definitions
-@import 'reset.scss';         // 04 - Reset Stylesheet
-@import 'grids.scss';         // 05 - Grid Stylesheet
-@import 'keyframes.scss';     // 06 - Animation Keyframes
-@import 'style.scss';         // 07 - Main Site Stylesheet
-@import 'media.scss';         // 08 - Media Stylesheet
+@import 'functions.scss';     // 01 - SCSS: Functions
+@import 'vars.scss';          // 02 - SCSS: Variables
+@import 'mixins.scss';        // 03 - SCSS: Mixins
+@import 'fonts.scss';         // 04 - Fonts
+@import 'reset.scss';         // 05 - Reset
+@import 'grids.scss';         // 06 - Grid
+@import 'keyframes.scss';     // 07 - Animation Keyframes
+@import 'defaults.scss';      // 08 - Main: Default Styles
+@import 'components.scss';    // 09 - Main: Components
+@import 'layout.scss';        // 10 - Main: Layout
+@import 'media.scss';         // 11 - Media Queries

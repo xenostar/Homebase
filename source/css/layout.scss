@@ -1,0 +1,57 @@
+/* -------------------------------------------------------------------------------------------------
+////////////////////////////////////////////////////////////////////////////////////////////////////
+LAYOUT STYLES
+////////////////////////////////////////////////////////////////////////////////////////////////////
+------------------------------------------------------------------------------------------------- */
+html                                             { overflow-y:scroll; }
+body                                             { background-color:$site-bg-color; position:relative; }
+.wrapper                                         { }
+
+
+/* Plugin/Framework Helpers (i.e. Typekit, FA)
+-----------------------------------------------
+/////////////////////////////////////////////// */
+.img                                             { position:relative; padding-top:75%; overflow:hidden; }
+.img img                                         { position:absolute; top:0; opacity:0; width:100%; transition:opacity 1s ease; }
+.img.loaded img                                  { opacity:1; }
+
+.imgc                                            { display:inline-block; overflow:hidden; }
+.imgc img                                        { opacity:0; transition:opacity 1s ease; }
+.imgc.loaded img                                 { opacity:1; }
+
+.fade-in                                         { opacity:1 !important; }
+.fade-out                                        { opacity:0 !important; }
+
+.wf-loading .title                               { opacity:0; }
+.wf-inactive .title,
+.wf-active .title                                { @include animation(fadeIn, 1.0s, 1.0s); }
+                                                   /* Handles Typekit Loading Events */
+
+.fa                                              { display:block; }
+                                                   /* I like this more than display:inline-block for FontAwesome icons */
+
+
+/* Layout Section - header
+-----------------------------------------------
+/////////////////////////////////////////////// */
+header                                           { }
+
+
+/* Layout Section - nav
+-----------------------------------------------
+/////////////////////////////////////////////// */
+nav                                              { }
+
+
+/* Layout Section - section.main
+-----------------------------------------------
+/////////////////////////////////////////////// */
+section.main                                     { }
+
+.content                                         { }
+
+
+/* Layout Section - footer
+-----------------------------------------------
+/////////////////////////////////////////////// */
+footer                                           { }

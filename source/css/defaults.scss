@@ -1,11 +1,8 @@
 /* -------------------------------------------------------------------------------------------------
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-LAYOUT SETUP
+BASE DEFAULTS
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 ------------------------------------------------------------------------------------------------- */
-/* Base Styles - Opinionated Defaults
------------------------------------------------
-/////////////////////////////////////////////// */
 html                                             { box-sizing: border-box; }
 *, *:before, *:after                             { box-sizing: inherit; }
 
@@ -49,30 +46,6 @@ span.amp                                         { font-family:Baskerville,"Pala
 
 
 
-/* Global Class Helpers
- * Might below to plugins/frameworks i.e. Typekit
------------------------------------------------
-/////////////////////////////////////////////// */
-.img                                             { position:relative; padding-top:75%; overflow:hidden; }
-.img img                                         { position:absolute; top:0; opacity:0; width:100%; transition:opacity 1s ease; }
-.img.loaded img                                  { opacity:1; }
-
-.imgc                                            { display:inline-block; overflow:hidden; }
-.imgc img                                        { opacity:0; transition:opacity 1s ease; }
-.imgc.loaded img                                 { opacity:1; }
-
-.fade-in                                         { opacity:1 !important; }
-.fade-out                                        { opacity:0 !important; }
-
-.wf-loading .title                               { opacity:0; }
-.wf-inactive .title,
-.wf-active .title                                { @include animation(fadeIn, 1.0s, 1.0s); }
-                                                   /* Handles Typekit Loading Events */
-
-.fa                                              { display:block; }
-                                                   /* I like this more than display:inline-block for FontAwesome icons */
-
-
 
 
 /* -------------------------------------------------------------------------------------------------
@@ -101,6 +74,7 @@ h4                                               { color:$def-header-color; font
 h5                                               { color:$def-header-color; font-size:em($def-h5-size); font-family:$def-font-family; font-style:$def-header-style; font-weight:$def-header-weight; line-height:1; }
 h6                                               { color:$def-header-color; font-size:em($def-h6-size); font-family:$def-font-family; font-style:$def-header-style; font-weight:$def-header-weight; line-height:1; }
                                                    /* Default header font-styling */
+
 
 
 
@@ -137,105 +111,7 @@ input[type="submit"]:hover                       { background:rgba(0,0,0,0.05); 
 textarea                                         { background:transparent; border:$def-border-size solid $def-border-color; border-radius:$def-border-radius; font-size:em($def-font-size); padding:rem(15px); min-height:rem(100px); transition:0.3s background ease; }
 textarea:focus                                   { background:rgba(0,0,0,0.05); }
 
-.select                                          { display: block; position: relative; }
-.select:after                                    { @include absolute(0,0,auto,auto); content: "\f063"; display: block; font-family: FontAwesome; line-height: $input-height; text-align: center; width: $input-height; z-index: 100; }
-
 select                                           { background:transparent; border:$def-border-size solid $def-border-color; border-radius:$def-border-radius; font-size:em($def-font-size); height:$input-height; padding:0 rem(15px); }
 select                                           { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
 select ::-ms-expand                              { display:none; }
 option                                           { padding:0; margin:0; }
-
-
-
-
-
-/* -------------------------------------------------------------------------------------------------
-////////////////////////////////////////////////////////////////////////////////////////////////////
-LAYOUT STYLES
-////////////////////////////////////////////////////////////////////////////////////////////////////
-------------------------------------------------------------------------------------------------- */
-html                                             { overflow-y:scroll; }
-body                                             { background-color:$site-bg-color; position:relative; }
-.wrapper                                         { }
-
-
-/* Layout Section - Mobile Nav
------------------------------------------------
-/////////////////////////////////////////////// */
-.mobile-nav--btn                                 { position:fixed; top:10px; left:10px; background:rgba(0,0,0,0.4); cursor:pointer; display:none; padding:rem(5px); transition:all 200ms ease; z-index:35; }
-.mobile-nav--btn.shift                           { left:105%; }
-.mobile-nav--btn div                             { background:#fff; height:rem(8px); margin-top:rem(6px); width:rem(36px); }
-.mobile-nav--btn div:first-child                 { margin-top:0; }
-
-.mobile-nav--body                                { @include fixed(0,auto,0,0); background:rgba(0,0,0,0.4); display:none; overflow-y:auto; transform:translate3d(-100%,0,0); -webkit-transform:translate3d(-100%,0,0); -ms-transform:translate3d(-100%,0,0); transition:all 200ms ease; width:100%; z-index:30; }
-.mobile-nav--body                                { font-family:$def-font-family; font-weight:500; font-style:normal; line-height:1; }
-.mobile-nav--body.shift                          { transform:translate3d(0,0,0); -webkit-transform:translate3d(0,0,0); -ms-transform:translate3d(0,0,0); }
-.mobile-nav--body .box                           { padding:rem(40px) 0; }
-.mobile-nav--body h2                             { border-bottom:1px solid #fff; color:#fff; cursor:default; display:block; font-size:em(35px); margin-bottom:rem(35px); padding:rem(40px) rem(40px) rem(35px) rem(40px); position:relative; text-shadow:0 2px 3px rgba(0,0,0,0.3); }
-.mobile-nav--body h2 i                           { background:rgba(0,0,0,0.2); cursor:pointer; @include absolute(0, 0, 0, auto); padding:rem(37px) rem(40px) 0 rem(40px); }
-
-.mobile-nav--body a                              { color:#fff; display:block; font-size:em(28px); padding:rem(15px) 0 rem(15px) rem(40px); text-shadow:0 2px 3px rgba(0,0,0,0.3); }
-.mobile-nav--body a:hover                        { background:rgba(0,0,0,0.2); }
-.mobile-nav--body a.active                       { color:$site-color-1; background:#fff; text-shadow:none; }
-.mobile-nav--body a:hover.active                 { opacity:1; }
-
-.mobile-nav--overlay                             { @include fixed(0,0,0,0); display:none; z-index:25; }
-.mobile-nav--blur                                { @include fixed(0,0,0,0); -webkit-filter: blur(2px); -moz-filter: blur(2px); -o-filter: blur(2px); -ms-filter: blur(2px); filter: blur(2px); }
-
-
-/* Layout Section - header
------------------------------------------------
-/////////////////////////////////////////////// */
-header                                           { }
-
-
-/* Layout Section - nav
------------------------------------------------
-/////////////////////////////////////////////// */
-nav                                              { }
-
-
-/* Layout Section - section.main
------------------------------------------------
-/////////////////////////////////////////////// */
-section.main                                     { }
-
-.content                                         { }
-
-
-/* Layout Section - footer
------------------------------------------------
-/////////////////////////////////////////////// */
-footer                                           { }
-
-
-/* Image Sprites
------------------------------------------------
-/////////////////////////////////////////////// */
-.img_sprites                                     { background-image:url('../img/sprite_sheet.png'); background-position:0 0; height:16px; width:16px; }
-
-
-
-
-
-/* -------------------------------------------------------------------------------------------------
-////////////////////////////////////////////////////////////////////////////////////////////////////
-PAGE STYLES
-////////////////////////////////////////////////////////////////////////////////////////////////////
-------------------------------------------------------------------------------------------------- */
-/* Page - Home
------------------------------------------------
-/////////////////////////////////////////////// */
-.home                                            { }
-
-
-/* Page - About
------------------------------------------------
-/////////////////////////////////////////////// */
-.about                                           { }
-
-
-/* Page - Contact
------------------------------------------------
-/////////////////////////////////////////////// */
-.contact                                         { }
