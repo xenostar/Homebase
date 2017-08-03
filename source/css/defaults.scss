@@ -60,6 +60,7 @@ p                                                { font-size:em($def-font-size);
                                                    /* Default paragraph font-styling */
 
 a                                                { color:$def-anchor-color; text-decoration:$def-anchor-deco; }
+a *                                              { transition: $def-transition; }
 a:hover                                          { color:$def-anchor-hover; }
 a:active                                         { }
 a:visited                                        { }
