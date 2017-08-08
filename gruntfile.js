@@ -9,8 +9,8 @@ module.exports = function(grunt) {
 
 		dirs: {
 			source: 'source',
-			output: 'public_html/assets'
-			// output: 'public_html/wp-content/themes/xenotheme/assets'
+			// output: 'public_html/assets'
+			output: 'public_html/wp-content/themes/xenotheme/assets'
 		},
 
 		// HTML Validation
