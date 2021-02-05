@@ -7,6 +7,10 @@ html                                             { overflow-y:scroll; }
 body                                             { background-color:$site-bg-color; position:relative; }
 .wrapper                                         { }
 
+.row                                             { margin-top: 20px; }
+.pad,.content                                    { background-color: #fff; border-radius: 8px; padding: 16px; text-align: center; }
+
+.title                                           { font-family: 'Open Sans', sans-serif; text-align:center; font-size:8rem; }
 
 /* Plugin/Framework Helpers (i.e. Typekit, FA)
 -----------------------------------------------

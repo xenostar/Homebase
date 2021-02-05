@@ -61,4 +61,5 @@ footer                                            { display:block; position:rela
 .gut .col_04                                      { margin-left:2%; width:66%; }
 .gut .col_03                                      { margin-left:2%; width:49%; }
 .gut .col_02                                      { margin-left:2%; width:32%; }
+.gut .col_01                                      { margin-left:2%; width:15%; }
 .gut .row > [class^="col_"]:first-child           { margin-left:0; } /* Removes left margin from first .col_0X of each .row so everything adds up to 100% width */
